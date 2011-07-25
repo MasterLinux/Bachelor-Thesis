@@ -4,6 +4,7 @@
 \usepackage{courier}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{hyperref}
 
 \title{Design of an UML tool with round-trip engineering for Java and implementation as a web application in Adobe Air}
 \date{10.08.2011}
@@ -230,7 +231,7 @@ The following JSON sample gives an overview about the output format and shows ea
 \end{lstlisting}
 
 \subsubsection{Class diagram generation}
-
+After parsing the Java source code the new data structure can be used to build a class diagram, which visualize the logical structure of its program. The process which builds the class diagram is subdivided into 3 parts. In the first step each class with all selected info - like the name, its variables and operations - will be created. If two classes with the same name exist, the name of the second class will be renamed. In this case each relation which has a reference on its class name could not be created anymore. During the first step any information which is needed for generalizations or the relations of provided interfaces will be stored. So it is not necessary to read the parser output twice. With the help of the stored information each generalization and all relations of provided interfaces can be created in step two. The last step needs the interpretation of each created class. To generate associations or the relations of required interfaces, each attribute of each class has to be analyzed. If an attribute has a data type of an existing class, it's a candidate for an association. In this case this class will be analyzed, too, to figure out whether the association has bidirectional navigation.
 
 \subsection{Forward engineering}
 To generate the source code from an existing class diagram, it’s essential to analyze each available class and connector, like generalizations or associations. The analyzing process will be handled from the classes themselves. So a class contains all necessary information and can handle it without an additional effort. Operations, parameter, attributes and classes own a method called \textit{getJSON()} that creates an output which is identical to the parser output \ref{json} and will be used to generate the source code. Furthermore it gets the relations between classes, so an additional process isn’t necessary. On getting each declared attribute, associations of the two classes and each required interface will be collected and set as attribute. Moreover if an interface extends another interface it will set as superclass and declare with the extend keyword, in the other case if a class provides an interface the implements keyword will be used. The following sections explain each available relation and their implementation. 
