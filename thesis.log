@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.7.23)  24 JUL 2011 13:26
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.7.23)  25 JUL 2011 15:15
 entering extended mode
 **thesis.tex
 (C:\bachelor\thesis.tex
@@ -158,7 +158,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks17
 \@floatcapt=\box30
 )
-No file thesis.aux.
+(C:\bachelor\thesis.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
@@ -172,6 +172,7 @@ LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 \c@lstlisting=\count98
+
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count99
@@ -190,26 +191,25 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <17.28> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 14.
-
-No file thesis.toc.
+ (C:\bachelor\thesis.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+)
 \tf@toc=\write3
-Missing character: There is no ’ in font cmr12!
-Missing character: There is no ’ in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
-Missing character: There is no ’ in font cmr12!
-[1
+ [1
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 31.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 31.
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
  [2]
+Missing character: There is no ’ in font cmr12!
 LaTeX Font Info:    Try loading font information for OMS+cmss on input line 61.
 
 LaTeX Font Info:    No file OMScmss.fd. on input line 61.
@@ -238,17 +238,14 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
  [4] [5] [6]
 Missing character: There is no ’ in font cmr12!
-
-
-LaTeX Warning: Reference `json' on page 7 undefined on input line 236.
-
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
-<images/example_generalization.png, id=25, 284.06125pt x 254.9525pt>
+ [7]
+<images/example_generalization.png, id=30, 284.06125pt x 254.9525pt>
 File: images/example_generalization.png Graphic file (type png)
 
 <use images/example_generalization.png>
@@ -264,13 +261,12 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
- [7]
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2004/09/05 1.3 listings language file
-)
+) [8 <C:/bachelor/images/example_generalization.png (PNG copy)>]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [8 <C:/bachelor/images/example_generalization.png (PNG copy)>]
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no – in font cmr12!
@@ -284,21 +280,15 @@ Missing character: There is no ” in font cmr12!
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 3584 strings out of 494053
- 51772 string characters out of 3148585
- 171511 words of memory out of 3000000
+ 3588 strings out of 494053
+ 51860 string characters out of 3148585
+ 172004 words of memory out of 3000000
  6869 multiletter control sequences out of 15000+200000
  9427 words of font info for 33 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 37i,7n,49p,1061b,1482s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,7n,49p,1066b,1532s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX
@@ -306,7 +296,7 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX
 /type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (9 pages, 116438 bytes).
+Output written on thesis.pdf (9 pages, 116848 bytes).
 PDF statistics:
  61 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
