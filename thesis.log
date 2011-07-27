@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.7.23)  25 JUL 2011 23:31
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.7.23)  27 JUL 2011 04:05
 entering extended mode
 **thesis.tex
 (C:\bachelor\thesis.tex
@@ -400,9 +400,6 @@ Missing character: There is no ” in font cmr12!
  [4] [5] [6]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
-Missing character: There is no ’ in font cmr12!
-Missing character: There is no ’ in font cmr12!
-Missing character: There is no ’ in font cmr12!
  [7]
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
@@ -420,34 +417,38 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 ) [8 <C:/bachelor/images/example_generalization.png (PNG copy)>]
 Missing character: There is no ’ in font cmr12!
-Missing character: There is no ’ in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
-Missing character: There is no – in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
-Missing character: There is no – in font cmr12!
-Missing character: There is no ’ in font cmr12!
- [9]
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 290.
- [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 290.
 
-(C:\bachelor\thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 290.
+<images/example_association.png, id=257, 187.70125pt x 208.78pt>
+File: images/example_association.png Graphic file (type png)
+
+<use images/example_association.png> [9]
+Missing character: There is no – in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
+Missing character: There is no – in font cmr12!
+
+<images/example_provided_interface.png, id=281, 145.54375pt x 216.81pt>
+File: images/example_provided_interface.png Graphic file (type png)
+
+<use images/example_provided_interface.png> [10 <C:/bachelor/images/example_ass
+ociation.png (PNG copy)>]
+<images/example_required_interface.png, id=300, 336.25626pt x 215.80624pt>
+File: images/example_required_interface.png Graphic file (type png)
+
+<use images/example_required_interface.png> [11 <C:/bachelor/images/example_pro
+vided_interface.png (PNG copy)>]
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 362.
+ [12 <C:/bachelor/images/example_required_interface.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 362.
+ (C:\bachelor\thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 362.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 28CE1408DEE995FB2FF2336A53FAB67D;974.
 
@@ -456,13 +457,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 7663 strings out of 494053
- 115889 string characters out of 3148585
- 274220 words of memory out of 3000000
- 10660 multiletter control sequences out of 15000+200000
+ 7734 strings out of 494053
+ 117215 string characters out of 3148585
+ 273859 words of memory out of 3000000
+ 10680 multiletter control sequences out of 15000+200000
  9427 words of font info for 33 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 38i,7n,49p,1231b,1723s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,7n,49p,1233b,1721s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX
@@ -470,9 +471,9 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX
 /type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (10 pages, 148572 bytes).
+Output written on thesis.pdf (12 pages, 184222 bytes).
 PDF statistics:
- 349 PDF objects out of 1000 (max. 8388607)
- 190 named destinations out of 1000 (max. 500000)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 418 PDF objects out of 1000 (max. 8388607)
+ 238 named destinations out of 1000 (max. 500000)
+ 125 words of extra memory for PDF output out of 10000 (max. 10000000)
 

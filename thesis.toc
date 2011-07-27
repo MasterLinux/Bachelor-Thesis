@@ -8,6 +8,6 @@
 \contentsline {subsection}{\numberline {1.2}Forward engineering}{8}{subsection.1.2}
 \contentsline {subsubsection}{\numberline {1.2.1}Generalization}{8}{subsubsection.1.2.1}
 \contentsline {subsubsection}{\numberline {1.2.2}Binary association}{9}{subsubsection.1.2.2}
-\contentsline {subsubsection}{\numberline {1.2.3}Provided interfaces}{9}{subsubsection.1.2.3}
-\contentsline {subsubsection}{\numberline {1.2.4}Required interfaces}{10}{subsubsection.1.2.4}
-\contentsline {subsubsection}{\numberline {1.2.5}Extended interfaces}{10}{subsubsection.1.2.5}
+\contentsline {subsubsection}{\numberline {1.2.3}Provided interfaces}{10}{subsubsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.4}Required interfaces}{11}{subsubsection.1.2.4}
+\contentsline {subsubsection}{\numberline {1.2.5}Extended interfaces}{12}{subsubsection.1.2.5}
