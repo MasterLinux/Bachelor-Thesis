@@ -12,7 +12,10 @@
 
 \begin{document}
 \maketitle 
-\tableofcontents 
+\newpage
+
+\tableofcontents
+\newpage 
 
 \section{AlphaUML}
 \subsection{Introduction}
@@ -36,6 +39,7 @@ AlphaUML is a simple UML tool for creating class diagrams, which supports round-
 \subsubsection{Required Interface}
 \subsubsection{Provided Interface} 
 
+\newpage
 \section{Implementation}
 \subsection{Frameworks}
 AlphaUML use a handful collection of libraries, which are used to improve the development process and allows the access to necessary system information, like the file system. Each framework is based on JavaScript, like AlphaUML, or supports JavaScript, so it’s theoretical possible to run the application in a web browser.
@@ -74,19 +78,19 @@ The Adobe Air HTML- and JavaScript engine is based on WebKit, an open source web
 
 \subsubsection{The basics of the GUI design}
 \paragraph{UI Object}
-Each UI element, like a tab or the file tree, inherits from a base class called ui.Object. This class provides the managing of event listener, the creation of a unique id or handles the deletion of the UI element. Furthermore it implies some useful utilities, like hiding or showing the UI element. But one of the most important features is the event manager. So it's necessary to unset each event listener, which listen to a removed DOM node. In addition the event manager provides the registration of new event listener for specific events and can deactivate, activate or remove each listener by name. Furthermore it's possible to activate or deactivate all listeners at the same time, what's necessary if a UI object will be destroyed. The “activate” and “deactivate” function can be overwritten to extend the functionality, by example to destroy the DOM node at deactivating. Another important feature is the generation of a unique id for the DOM node of the UI element. So the HTML standard defines that an id has to use once only. If two nodes have the same id, the JavaScript engine of the web-browser can't get access to both. To get a unique id the id-creator uses the class name as base and searches for other nodes of that class, counts each appearance and appends the counter to the class name. The last mentionable function of the base class is the deletion handling. To be sure that each registered event listener and each used UI element of an UI element, like a button of a dialog, including the DOM node will be destroyed, the base class has a specific destroy function, which handles the "garbage collection". To initialize an UI object a function called "create" will be used. It generates a unique id, places the DOM node and sets up all necessary event listeners. A UI object has a specific uitype, which will be used to identify a DOM node as a UI element. It will be set as a HTML attribute and can be accessed on a catch event.
+Each UI element, like a tab or the file tree, inherits from a base class called ui.Object. This class provides the managing of event listener, the creation of a unique id or handles the deletion of the UI element. Furthermore it implies some useful utilities, like hiding or showing the UI element. But one of the most important features is the event manager. So it's necessary to unset each event listener, which listen to a removed DOM node. In addition the event manager provides the registration of new event listener for specific events and can deactivate, activate or remove each listener by name. Furthermore it's possible to activate or deactivate all listeners at the same time, what's necessary if a UI object will be destroyed. The "activate" and "deactivate" function can be overwritten to extend the functionality, by example to destroy the DOM node at deactivating. Another important feature is the generation of a unique id for the DOM node of the UI element. So the HTML standard defines that an id has to use once only. If two nodes have the same id, the JavaScript engine of the web-browser can't get access to both. To get a unique id the id-creator uses the class name as base and searches for other nodes of that class, counts each appearance and appends the counter to the class name. The last mentionable function of the base class is the deletion handling. To be sure that each registered event listener and each used UI element of an UI element, like a button of a dialog, including the DOM node will be destroyed, the base class has a specific destroy function, which handles the "garbage collection". To initialize an UI object a function called "create" will be used. It generates a unique id, places the DOM node and sets up all necessary event listeners. A UI object has a specific uitype, which will be used to identify a DOM node as a UI element. It will be set as a HTML attribute and can be accessed on a catch event.
 
 \paragraph{Window}
 On the top of the GUI the window object manages the resizing and the full-screen mode of the Adobe Air window. It contains a collection of frames, which will be placed and resized with the help of the current window properties.
 
 \paragraph{Frame}
-A frame is the main actor in handling tabs and its content. In addition it resizes the tab content, like the Java editor or the file tree, and allows opening new tabs. In addition it allows and handles the replacing of tabs. If a user dragged a tab in another frame, the tab will be removed from the old frame and replaced into the new one. In this case only the DOM nodes will be destroyed, but the Meta data - like the source code of a specific editor tab - because it’s necessary to be able to recreate the tab.
+A frame is the main actor in handling tabs and its content. In addition it resizes the tab content, like the Java editor or the file tree, and allows opening new tabs. In addition it handles the replacing and deletion of tabs. To drag a tab into another frame, the tab, its content and context menu will be removed from the old frame and replaced into the new one. In this case only the DOM nodes will be destroyed, but the Meta data - like the source code of a specific editor tab - because it’s necessary to be able to recreate the tab.
 
 \paragraph{Tab}
-A tab is subdivided into 3 parts. At first the tab themselves, which handles the create- and destroy-process of its content and its context menu. In addition it starts its replacing, if a user begins to drag the tab. 
+A tab is only a draggable button, which references to its content and context menu. It's used to show or hide a specific content, like a code editor. A tab is subdivided into 3 parts. At first the tab themselves, which handles the create- and destroy-process of its content and context menu. In addition it starts its replacing process, which will be handled by the parent frame, if a user begins to drag the tab.
 
 \paragraph{Context Menu}
-The next part of a tab is its context menu. The context menu holds a collection of buttons, which can be used to execute specific functions of a tab. For example the editor tab has buttons to save its current document or to resize the font size. 
+The next part of a tab is its context menu. The context menu holds a collection of buttons, which can be used to execute specific functions of a tab. For example the editor tab has buttons to save its current document or to resize the font size.
 
 \paragraph{Content}
 The last part is the content object. It provides the access of some tools, like the class diagram editor, a Java editor or a file tree.
@@ -96,6 +100,19 @@ The last part is the content object. It provides the access of some tools, like 
 \includegraphics[scale=0.5]{images/gui_design.png}
 \end{figure}
 
+\subsubsection{Additional GUI components}
+The GUI framework provides a number of UI components, which will be necessary for an application. The following list shows each available component.
+
+\begin{description}
+	\item[Dialog]
+	\item[Tooltip]
+	\item[MouseInfo]
+\end{description}
+
+\subsection{Single Page Web App}
+Usually a web application is using a handful of HTML pages for rendering its content. A single page web app has only one HTML document, which will be updated by some JavaScript functions. So it's possible to place, replace or remove DOM nodes during the runtime. Another characteristic of a web application is its fragmentation into backend - usually server-side - and frontend - client-side -, which concept is also be used in a single page web app. But AlphaUML is designed as a single page web app without a backend, which could be used for parsing or for getting access to files from storage. All these functionality is transferred to the frontend, so each process will be executed on the client side. To realize that concept, the compiler and any other feature is completely written in JavaScript. In addition Adobe Air is used to get access to functionalities, which JavaScript isn't allowed to. For example JavaScript can't get access to the file system of a client, 'cause of security reasons. In this case Adobe Air is the way to go.
+
+\newpage
 \section{Round-trip engineering}
 Today's complexity of software requires the use of diagrams that will describe the structure of programs and how the internal processes communicate, during and primary at the beginning of the development. Moreover for object oriented languages like Java, the UML standard is the way to go, because of its focus for the object oriented developing of software.  
 Structure diagrams, like the class diagram, have the capability to generate source code by analyzing it. In addition it's possible to create a class diagram with the help of source code. 
@@ -392,7 +409,7 @@ Provided interfaces are like generalizations with abstract classes. Each operati
 \includegraphics[scale=0.8]{images/example_provided_interface.png}
 \end{figure}
 
-
+This UML diagram shows the class "JavaFile", which use the "File" interface for a standardized communication. To use the interface the interface visibility is set to "public" and the class, which implements it, will redefine each operation of the interface.  
 
 \begin{lstlisting}[caption={The following code snippet shows the result of the code generation.}, frame=single]
 public interface File {
@@ -421,6 +438,8 @@ A required interface allows the communication between a class and another class 
 \includegraphics[scale=0.8]{images/example_required_interface.png}
 \end{figure}
 
+In this example the FileBrowser use an interface to get a standardized access to each file type, which implements the "File" interface. In this case a file could be a JavaFile or maybe a TextFile, or something else. The required interface will be declared as an attribute with the data type "File" and can be initialized with the JavaFile constructor \textit{private File javaFile = new JavaFile("read");}. But the code generator sets only the attribute. 
+
 \begin{lstlisting}[caption={The following code snippet shows the result of the code generation.}, frame=single]
 public interface File {
 	private String name;
@@ -441,5 +460,27 @@ public class FileBrowser {
 
 \subsubsection{Extended interfaces}
 If an interface will be extended, a generalization \ref{generalization} has to be used. That includes the UML generalization arrow and on the Java side, the use of the “extends” keyword.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{images/example_extended_interface.png}
+\end{figure}
+
+In this case the Executable interface extends the File interface with the execute function.
+
+\begin{lstlisting}[caption={The following code snippet shows the result of the code generation.}, frame=single]
+public interface File {
+	private String name;
+	private String path;
+	
+	public void open(String mode);
+
+	public void close();
+}
+
+public interface Executable extends File {
+	public void execute() {}
+}
+\end{lstlisting}
 
 \end{document}
