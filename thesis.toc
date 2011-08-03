@@ -39,11 +39,12 @@
 \contentsline {subsection}{\numberline {2.4}Single Source Publishing}{9}{subsection.2.4}
 \contentsline {subsubsection}{\numberline {2.4.1}Class Diagram Specifics}{9}{subsubsection.2.4.1}
 \contentsline {paragraph}{@umlPos x:42 y:42}{9}{section*.13}
-\contentsline {paragraph}{@umlTitle title-text}{10}{section*.14}
-\contentsline {paragraph}{@umlIgnore path}{10}{section*.15}
+\contentsline {paragraph}{@umlNotePos x:42 y:42}{10}{section*.14}
+\contentsline {paragraph}{@umlTitle title-text}{10}{section*.15}
 \contentsline {paragraph}{JavaDoc Comment}{10}{section*.16}
 \contentsline {subsubsection}{\numberline {2.4.2}Project Specifics}{10}{subsubsection.2.4.2}
 \contentsline {paragraph}{@umlProject root:path/folder main:path/file.java}{10}{section*.17}
+\contentsline {paragraph}{@umlIgnore path}{10}{section*.18}
 \contentsline {section}{\numberline {3}Round-trip engineering}{11}{section.3}
 \contentsline {subsection}{\numberline {3.1}Reverse engineering}{11}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Parser}{11}{subsubsection.3.1.1}

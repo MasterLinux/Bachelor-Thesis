@@ -48,7 +48,7 @@ AlphaUML use a handful collection of libraries, which are used to improve the de
 With Adobe Air it’s possible to create web applications, which will be executed as a native application on a desktop PC or a tablet. It supports the development in JavaScript and HTML and provides a library, which gives access to some system side functions and programs, like the command console or the file system. Adobe Air use the WebKit engine to allow to execute a JavaScript application. This fact is also necessary to know for designing the application \ref{css}.
 
 \subsubsection{Dojo Toolkit}
-Dojo is an enhanced framework to build JavaScript web applications (apps) and provides a huge number of features, which speeds up the development. Furthermore it’s very useful to build JavaScript apps in an object oriented style. So it allows to use a package system, has a build-in class system, which simulates for example inheritance. In addition one of the most important features is the event system. So user-triggered events, like an “onclick” event can be caught. Moreover self-defined events can be thrown, which release specific functions to react on these events. 
+Dojo is an enhanced framework to build JavaScript web applications (apps) and provides a huge number of features, which speeds up the development. Furthermore it’s very useful to build JavaScript apps in an object oriented style. So it allows to use a package system, has a build-in class system, which simulates for example inheritance. In addition one of the most important features is the event system. So user-triggered events, like an "onclick" event can be caught. Moreover self-defined events can be thrown, which release specific functions to react on these events. 
 
 \paragraph{Package System}
 The package system is based on the folder structure of its project. So if a JavaScript file has the following path "lib/ui/Dialog.js" and it’s necessary to get access to the Dialog class, the dojo.require function has to include this file by setting its path as first parameter. The “require” function includes the file during the runtime, so it isn't necessary to load the whole script at the beginning, which will saving a lot of loading time.
@@ -130,11 +130,11 @@ To avoid project files AlphaUML follows the single source publishing concept. It
 \paragraph{@umlPos x:42 y:42}
 The position-tag defines the position - in pixel - of a class in the class diagram.
 
+\paragraph{@umlNotePos x:42 y:42}
+If a class has a comment included, the position of the note will be stored in the note-position-tag. In addition if more than one note is connected to a class, the position of the first note will be used.
+
 \paragraph{@umlTitle title-text}
 The title-tag defines the title of the last generated class-digram.
-
-\paragraph{@umlIgnore path}
-To exclude specific files or folder, the ignore-tag allows ignoring those for the class diagram generation. That could be necessary if only a part of files should include in the class diagram, or if some Java files don’t follow the java syntax completely, 'cause of its use to store only Java snippets.
 
 \paragraph{JavaDoc Comment}
 A special case is the JavaDoc comment itself. It is used to generate notes, which will be pinned to its associated class. In addition if the user creates a new note, the code generator uses as JavaDoc class comment. Moreover multiple usages of notes are allowed, so each note comment will be merged to one comment.
@@ -142,6 +142,9 @@ A special case is the JavaDoc comment itself. It is used to generate notes, whic
 \subsubsection{Project Specifics}
 \paragraph{@umlProject root:path/folder main:path/file.java}
 The project-tag is used to define the project main file. It includes the relative root path and the main Java file with an absolute path.
+
+\paragraph{@umlIgnore path}
+To exclude specific files or folder, the ignore-tag allows ignoring those for the class diagram generation. That could be necessary if only a part of files should include in the class diagram, or if some Java files don’t follow the java syntax completely, 'cause of its use to store only Java snippets.
 
 \newpage
 \section{Round-trip engineering}
@@ -244,7 +247,7 @@ DataType =
 \label{json} 
 The produced output from the source code will be used to generate the class diagram. The JSON format of the output makes the next process easier, so it represents a specific logical structure and allows the immediate access to all necessary information about the parsed Java program.
 The output provides, for example, the info about used libraries, the class package, all class methods or variables to generate the class diagram. In addition the JavaDoc is available and will be pinned as note at the specific class in the diagram.
-The following JSON sample gives an overview about the output format and shows each possible fields like the “package” or “classes” fields.
+The following JSON sample gives an overview about the output format and shows each possible fields like the "package" or "classes" fields.
 
 \begin{lstlisting}[caption={file output}, frame=single]
 {
