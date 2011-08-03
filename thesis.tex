@@ -26,18 +26,78 @@ AlphaUML is a simple UML tool for creating class diagrams, which supports round-
 \subsubsection{Load Existing Project}
 
 \subsection{Console}
+The console is a very useful tool to get information about the forward and reverse engineering process. It displays the current step of the executed process and catches errors. When a parsing error occurred the parser throws a message with all necessary information, like the Java file which causes the error and in which line and position it occurs. Furthermore it's able to execute the Java compiler \ref{javac} or the JavaDoc generator \ref{javadoc} by using their specific commands.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{images/console.png}
+\caption{Console which showing the round-trip engineering process}
+\end{figure}
+
 \subsubsection{Java Compiler}
+\label{javac}
+To compile the current opened project, it's possible to execute the "javac" command via the command line of the console. Currently it saves a generated class file of an associated Java File in same folder in which the Java file is placed. Moreover when the compiler throws an error, the console displays it. \newline To be able to execute the "javac" command the console needs the path of the java compiler, which has to be set in the AlphaUML options \ref{alphauml_options}.
+
+\paragraph{Command}
+javac
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{images/console_javac.png}
+\caption{Execution of the Java compiler}
+\end{figure}
+ 
 \subsubsection{JavaDoc Generator}
+\label{javadoc}
 
 \subsection{Java Editor}
 
 \subsection{Class Diagram Editor}
+The class diagram editor is a small editor to draft class diagrams with a handful of tools to create classes, notes or for example generalizations. It simply consists of two components, the workspace and the toolbar, which gives access to each necessary tool. Moreover each tool is optimized for the Java programming language, to enhance Java developers. The editor supports the following UML notation elements, which will be described in the next chapters.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{images/class_diagram_editor.png}
+\caption{Layout of the class diagram editor}
+\end{figure}
+
+\begin{enumerate}
+\item Class \ref{class_desc}
+\item Note \ref{note_desc}
+\item Provided Interface \ref{provided_interface_desc}
+\item Required Interface \ref{required_interface_desc}
+\item Binary association \ref{association_desc}
+\item Generalization \ref{generalization_desc}
+\end{enumerate}
+
+
+
 \subsubsection{Class}
+\label{class_desc}
+
 \subsubsection{Note}
-\subsubsection{Association}
+\label{note_desc}
+
+\subsubsection{Binary Association}
+\label{association_desc}
+When a class refers to another class, a binary association is used to visualize a relation between these classes. An association allows declaring the direction of the navigation, which defines in which class a reference, will be used. Moreover it's possible to set the role – name of its reference – and the multiplicity to set the min and max number of instances. The association name is only a notation element for an easier readability of the association and won't be used as a property of an instance.\newline To create a binary association the “Add Association” tool has to be activated. Then the two classes which will be in relation have to be selected. And after these steps a dialog will be opened, which provides the configuration of all necessary association properties.  
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{images/add_association_dialog.png}
+\caption{Dialog for adding a new binary association}
+\end{figure}
+
 \subsubsection{Generalization}
+\label{generalization_desc}
+
 \subsubsection{Required Interface}
-\subsubsection{Provided Interface} 
+\label{required_interface_desc}
+
+\subsubsection{Provided Interface}
+\label{provided_interface_desc}
+
+\subsubsection{Round-trip Engineering}
 
 \newpage
 \section{Implementation}
