@@ -21,6 +21,10 @@
 \subsection{Introduction}
 AlphaUML is a simple UML tool for creating class diagrams, which supports round-trip engineering. It is designed for small projects and has its focus on being a learning tool for students. So it’s important that changes can be realized easily by a user, which will enhance the learning by doing process. Moreover AlphaUML is currently specialized for Java, so the parser supports only Java as programming language and dialogs are structured according to the Java syntax. Furthermore it has a fully integrated editor, which is useful to edit existing source code.
 
+\subsection{Configuration}
+\label{alphauml_options}
+Some of the provided tools need to be configured. On the one hand the Java compiler \ref{javac} and on the other hand the JavaDoc generator \ref{javadoc} needs a specific file path, in which the executables are. In this case the "bin" directory of Java installation. Those paths can be set in the AlphaUML options. To open the options, navigate to the "File" menu and select the "Options" entry. Without the configuration, each of those programs throws an error and can't be executed.
+
 \subsection{Projects}
 \subsubsection{New Project}
 \subsubsection{Load Existing Project}
@@ -36,7 +40,7 @@ The console is a very useful tool to get information about the forward and rever
 
 \subsubsection{Java Compiler}
 \label{javac}
-To compile the current opened project, it's possible to execute the "javac" command via the command line of the console. Currently it saves a generated class file of an associated Java File in same folder in which the Java file is placed. Moreover when the compiler throws an error, the console displays it. \newline To be able to execute the "javac" command the console needs the path of the java compiler, which has to be set in the AlphaUML options \ref{alphauml_options}.
+To compile the current opened project, it's possible to execute the "javac" command via the command line of the console. Currently it saves the generated class file of an associated Java File in the "build" folder of the project, which will be found in the projects root. Moreover when the compiler throws an error, the console displays it. \newline To be able to execute the "javac" command the console needs the path of the Java compiler, which has to be set in the AlphaUML options \ref{alphauml_options}.
 
 \paragraph{Command}
 javac
@@ -49,8 +53,26 @@ javac
  
 \subsubsection{JavaDoc Generator}
 \label{javadoc}
+It's also possible to generate documentation with the help of the JavaDoc generator. It collects each Java file of the project, which isn't ignored for those processes, and places the generated documentation into the "docs" folder of the projects root. \newline Like the "javac" command the "javadoc" command will be executed via the command line of the console and needs a correct configuration in the AlphaUML options \ref{alphauml_options}.
 
-\subsection{Java Editor}
+\paragraph{Command}
+javadoc
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{images/console_javadoc.png}
+\caption{Execution of the JavaDoc generator}
+\end{figure}
+
+\subsection{Code Editor}
+The code editor, as a main feature of AlphaUML, is an advanced editor, with various functionalities, like the searching and replacing of code snippets and the syntax highlighting. The editor is based on Ace \ref{ace_editor} an open source editor written in JavaScript. Mainly Ace provides a huge collection of supported programming languages, like JavaScript, C/C++ or Java, but is optimized for editing JavaScript and CoffeeScript. So some features aren't supported in AlphaUML, like the showing of syntax errors. But this feature is available thru the round-trip engineering and compiling process, which errors are shown in the console.
+The editor in AplhaUML is optimized for Java and text files and is able to save those files. If a new Java file will be created without a specific file path - for example after the code generation process – a file dialog will be opened, which can used to save those. Another feature, - which is useful if a user believes that the used font is too small, especially 'caused an amblyopic - can increment or decrement the font size. The last possibility is to search and replace parts of source code or other keywords, which will be necessary if a document includes a huge number of characters, and the user will search something special.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.9]{images/editor.png}
+\caption{View of the code editor}
+\end{figure}
 
 \subsection{Class Diagram Editor}
 The class diagram editor is a small editor to draft class diagrams with a handful of tools to create classes, notes or for example generalizations. It simply consists of two components, the workspace and the toolbar, which gives access to each necessary tool. Moreover each tool is optimized for the Java programming language, to enhance Java developers. The editor supports the following UML notation elements, which will be described in the next chapters.
@@ -80,7 +102,7 @@ The class diagram editor is a small editor to draft class diagrams with a handfu
 
 \subsubsection{Binary Association}
 \label{association_desc}
-When a class refers to another class, a binary association is used to visualize a relation between these classes. An association allows declaring the direction of the navigation, which defines in which class a reference, will be used. Moreover it's possible to set the role – name of its reference – and the multiplicity to set the min and max number of instances. The association name is only a notation element for an easier readability of the association and won't be used as a property of an instance.\newline To create a binary association the “Add Association” tool has to be activated. Then the two classes which will be in relation have to be selected. And after these steps a dialog will be opened, which provides the configuration of all necessary association properties.  
+When a class refers to another class, a binary association is used to visualize a relation between these classes. An association allows declaring the direction of the navigation, which defines in which class a reference, will be used. Moreover it's possible to set the role – name of its reference – and the multiplicity to set the min and max number of instances. The association name is only a notation element for an easier readability of the association and won't be used as a property of an instance.\newline To create a binary association the "Add Association" tool has to be activated. Then the two classes which will be in relation have to be selected. And after these steps a dialog will be opened, which provides the configuration of all necessary association properties.  
 
 \begin{figure}[H]
 \centering
@@ -96,6 +118,12 @@ When a class refers to another class, a binary association is used to visualize 
 
 \subsubsection{Provided Interface}
 \label{provided_interface_desc}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{images/add_provided_interface_dialog.png}
+\caption{Dialog for setting a new provided interface}
+\end{figure}
 
 \subsubsection{Round-trip Engineering}
 
@@ -129,6 +157,7 @@ The use of events is particularly in JavaScript useful. So on the one hand it’s 
 PEG.js is a JavaScript library, which generates a parser with the help of a specific grammar. So it’s possible to parse each programming language or to build a calculator, or something else. For more information show \ref{pegjs}.
 
 \subsubsection{Ace}
+\label{ace_editor}
 Ace is a fast code editor with syntax highlighting and search- and replace-functions. It is fully developed in JavaScript and currently focused on JavaScript and CoffeeScript development, but allows using syntax highlighting for other languages, like Java, too.
 
 \subsection{User Interface (UI)}
