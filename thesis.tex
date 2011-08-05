@@ -75,7 +75,7 @@ The editor in AplhaUML is optimized for Java and text files and is able to save 
 \end{figure}
 
 \subsection{Class Diagram Editor}
-The class diagram editor is a small editor to draft class diagrams with a handful of tools to create classes, notes or for example generalizations. It simply consists of two components, the workspace and the toolbar, which gives access to each necessary tool. Moreover each tool is optimized for the Java programming language, to enhance Java developers. The editor supports the following UML notation elements, which will be described in the next chapters.
+The class diagram editor is a small editor to draft class diagrams with a handful of tools to create classes, notes or for example generalizations. It simply consists of two components, the workspace and the toolbar, which gives access to each necessary tool. Moreover each tool is optimized for the Java programming language, to enhance Java developers.
 
 \begin{figure}[H]
 \centering
@@ -83,6 +83,12 @@ The class diagram editor is a small editor to draft class diagrams with a handfu
 \caption{Layout of the class diagram editor}
 \end{figure}
 
+\paragraph{Multiple usages of tools}
+'Cause of the visual resemblance of some UML components, like the generalization- and a provided interface arrow, and the idea to provide a simple user interface without a huge collection of buttons, some tools will be used for multiple usages. Each tool uses depending on what type of action is registered, for example what type of classes are selected, their specific functionality. If a user use the "Add Generalization" tool and selects two classes a generalization will be created, but if the user selects an interface and a class, the tool adds a provided interface. To simplify the usage of those tools tooltips will be used to show each possible usage.
+
+\paragraph{Supported UML notation elements}
+The editor supports the following UML notation elements, which will be described in the next chapters.
+ 
 \begin{enumerate}
 \item Class \ref{class_desc}
 \item Note \ref{note_desc}
@@ -92,11 +98,9 @@ The class diagram editor is a small editor to draft class diagrams with a handfu
 \item Generalization \ref{generalization_desc}
 \end{enumerate}
 
-
-
 \subsubsection{Class}
 \label{class_desc}
-A class is a structural design for objects and contains attributes and operations, which describes its properties and functionalities. It is subdivided into 3 parts, a part for its name and stereotype or abstract declaration, another part for its attributes and at last a part for each operation of the class. To add a class the “Add Class” tool from the toolbar has to be selected, which allows placing a class into the workspace, by clicking on a specific place in it.
+A class is a structural design for objects and contains attributes and operations, which describes its properties and functionalities. It is subdivided into 3 parts, a part for its name and stereotype or abstract declaration, another part for its attributes and at last a part for each operation of the class. To add a class the "Add Class" tool from the toolbar has to be selected, which allows placing a class into the workspace, by clicking on a specific place in it.
 
 \begin{figure}[H]
 \centering
@@ -104,14 +108,62 @@ A class is a structural design for objects and contains attributes and operation
 \caption{Dialog for adding a new class}
 \end{figure}
 
+After placing the class a dialog will be opened to configure the new class. It allows setting a class name, modifier or its visibility. Furthermore it's also possible to implement interfaces or to inherit from another class via the "Extends" option.\newline A special characteristic of each dialog, which will be used to add a class diagram-component, is its subdivision into 2 parts. On the top there is a preview, which shows the result of the current configuration as Java and a UML component. And at the bottom each component property can be set. So the user can see his changes directly.
 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{images/class.png}
+\caption{View of a class}
+\label{desc_class}
+\end{figure}
+
+When a class is placed, it provides a various number of functionalities, like the adding of attributes or operations. The most mentionable functionality is the context menu of a class, which gives access to the “Edit Class” tool and gives possibilities to rename or remove the class. The context menu will be opened by a click on the class name. For adding a new attribute the plus icon beside the "Attribute" header - Figure \ref{desc_class} number 1 - has to be clicked, which opens the "Add Attribute" dialog.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{images/add_attribute_dialog.png}
+\caption{Dialog for adding a new attribute}
+\end{figure}
+
+Furthermore to create a new operation, the plus icon beside the "Operation" header  - Figure \ref{desc_class} number 2 -  is the way to go, to open the specific dialog.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{images/add_operation_dialog.png}
+\caption{Dialog for adding a new operation}
+\end{figure}
+
+Secondary to the typical operation properties, like the name, it's possible to add parameters via the "Add Operation" dialog. Parameters can also be added by using its plus icon, which is shown in any operation entry. In both cases the same dialog for adding parameters will be opened.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{images/add_parameter_dialog.png}
+\caption{Dialog for adding a new parameter}
+\end{figure}
+
+Each operation and attribute is build-on so called tags, which are all clickable. A click on the name of an attribute or operation will open a context menu for configuring and deleting it. Each other tag is used for a quick access on its value. So it's possible to change the data type of an attribute by clicking on it and selecting another one from the opened context menu.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{images/attribute_datatype_quick_access.png}
+\caption{Quick access}
+\end{figure}
+
+In some cases a Java modifier can't display as specific UML keyword. So it's commonly accepted to display attributes or operations with a different formation. Abstract class members will be shown with an italic font and static members are underlined. In addition final members use the \{readOnly\} property.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{images/class_modifier_views.png}
+\caption{View of an final attribute and an abstract and static operation}
+\end{figure}
 
 \subsubsection{Note}
 \label{note_desc}
+A note is used to document a specific class. Its comment will be also used to generate with it a JavaDoc comment, during the forward engineering process \ref{forward_engineering_desc}. It's also possible to create a note without a relation to a class, which could be useful for small memos. To create a note the toolbar provides the "Add Note" tool, which allows placing a note into the workspace. If it's necessary to connect a note to a class the "Add Association" tool \ref{association_desc} will be used.
 
 \subsubsection{Binary Association}
 \label{association_desc}
-When a class refers to another class, a binary association is used to visualize a relation between these classes. An association allows declaring the direction of the navigation, which defines in which class a reference, will be used. Moreover it's possible to set the role – name of its reference – and the multiplicity to set the min and max number of instances. The association name is only a notation element for an easier readability of the association and won't be used as a property of an instance.\newline To create a binary association the "Add Association" tool has to be activated. Then the two classes which will be in relation have to be selected. And after these steps a dialog will be opened, which provides the configuration of all necessary association properties.  
+When a class refers to another class, a binary association is used to visualize a relation between these classes. An association allows declaring the direction of the navigation, which defines in which class a reference, will be used. Moreover it's possible to set the role – name of its reference – and the multiplicity to set the min and max number of instances. The association name is only a notation element for an easier readability of the association and won't be used as a property of an instance.\newline To create a binary association the "Add Association" tool has to be activated. Then the two classes which will be in relation have to be selected. And after these steps a dialog will be opened, which provides the configuration of all necessary association properties.
 
 \begin{figure}[H]
 \centering
@@ -121,12 +173,27 @@ When a class refers to another class, a binary association is used to visualize 
 
 \subsubsection{Generalization}
 \label{generalization_desc}
+A generalization describes a relation between a super- and a subclass and specifies that the subclass inherits from the superclass. So each attribute and operation of the superclass is also available in the subclass. It's also possible overwriting an operation, which can be handled by declaring the same operation with identical parameters like the one in the superclass. Otherwise the superclass operation will be used. To set a generalization the "Add Generalization" tool of the toolbar is used. After activating it the superclass has to be selected and then the subclass, which opens a dialog for setting it up. To edit this relation it's possible to click the generalization for opening a context menu, which allows the deletion of it also.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{images/add_generalization_dialog.png}
+\caption{Dialog for adding a new generalization}
+\end{figure}
 
 \subsubsection{Required Interface}
 \label{required_interface_desc}
+An interface is a special kind of an abstract class, with the different that it's possible to inherit more than one interface. When a class uses a specific interface it's called a required interface, which can be set with the "Add Association" tool.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{images/add_required_interface_dialog.png}
+\caption{Dialog for setting a new required interface}
+\end{figure}
 
 \subsubsection{Provided Interface}
 \label{provided_interface_desc}
+Moreover if a class inherits from an interface, it's called provided interface and can be set via the "Add Generalization" tool.
 
 \begin{figure}[H]
 \centering
