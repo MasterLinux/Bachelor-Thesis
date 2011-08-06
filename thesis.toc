@@ -20,47 +20,47 @@
 \contentsline {subsubsection}{\numberline {1.6.5}Required Interface}{14}{subsubsection.1.6.5}
 \contentsline {subsubsection}{\numberline {1.6.6}Provided Interface}{14}{subsubsection.1.6.6}
 \contentsline {subsubsection}{\numberline {1.6.7}Round-trip Engineering}{14}{subsubsection.1.6.7}
-\contentsline {section}{\numberline {2}Implementation}{15}{section.2}
-\contentsline {subsection}{\numberline {2.1}Frameworks}{15}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Adobe Air}{15}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Dojo Toolkit}{15}{subsubsection.2.1.2}
-\contentsline {paragraph}{Package System}{15}{section*.6}
-\contentsline {paragraph}{Class System}{15}{section*.7}
-\contentsline {paragraph}{Event System}{16}{section*.8}
-\contentsline {subsubsection}{\numberline {2.1.3}PEG.js}{16}{subsubsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.4}Ace}{16}{subsubsection.2.1.4}
-\contentsline {subsection}{\numberline {2.2}User Interface (UI)}{16}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Graphical Design}{16}{subsubsection.2.2.1}
-\contentsline {paragraph}{JavaScript Specifics}{16}{section*.9}
-\contentsline {paragraph}{Adobe Air Specifics}{16}{section*.10}
-\contentsline {subsubsection}{\numberline {2.2.2}The basics of the GUI design}{17}{subsubsection.2.2.2}
-\contentsline {paragraph}{UI Object}{17}{section*.11}
-\contentsline {paragraph}{Window}{17}{section*.12}
-\contentsline {paragraph}{Frame}{17}{section*.13}
-\contentsline {paragraph}{Tab}{17}{section*.14}
-\contentsline {paragraph}{Context Menu}{18}{section*.15}
-\contentsline {paragraph}{Content}{18}{section*.16}
-\contentsline {subsubsection}{\numberline {2.2.3}Additional GUI components}{18}{subsubsection.2.2.3}
-\contentsline {subsection}{\numberline {2.3}Single Page Web App}{18}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Single Source Publishing}{19}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Class Diagram Specifics}{19}{subsubsection.2.4.1}
-\contentsline {paragraph}{@umlPos x:42 y:42}{19}{section*.17}
-\contentsline {paragraph}{@umlNotePos x:42 y:42}{20}{section*.18}
-\contentsline {paragraph}{@umlTitle title-text}{20}{section*.19}
-\contentsline {paragraph}{JavaDoc Comment}{20}{section*.20}
-\contentsline {subsubsection}{\numberline {2.4.2}Project Specifics}{20}{subsubsection.2.4.2}
-\contentsline {paragraph}{@umlProject root:path/folder main:path/file.java}{20}{section*.21}
-\contentsline {paragraph}{@umlIgnore path}{20}{section*.22}
-\contentsline {section}{\numberline {3}Round-trip engineering}{21}{section.3}
-\contentsline {subsection}{\numberline {3.1}Reverse engineering}{21}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Parser}{21}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Parser grammar rules}{21}{subsubsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.3}Parser grammar example}{23}{subsubsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.4}Parser output}{23}{subsubsection.3.1.4}
-\contentsline {subsubsection}{\numberline {3.1.5}Class diagram generation}{26}{subsubsection.3.1.5}
-\contentsline {subsection}{\numberline {3.2}Forward engineering}{27}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Generalization}{27}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Binary association}{28}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}Provided interfaces}{29}{subsubsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.4}Required interfaces}{30}{subsubsection.3.2.4}
-\contentsline {subsubsection}{\numberline {3.2.5}Extended interfaces}{31}{subsubsection.3.2.5}
+\contentsline {section}{\numberline {2}Implementation}{16}{section.2}
+\contentsline {subsection}{\numberline {2.1}Frameworks}{16}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Adobe Air}{16}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Dojo Toolkit}{16}{subsubsection.2.1.2}
+\contentsline {paragraph}{Package System}{16}{section*.6}
+\contentsline {paragraph}{Class System}{16}{section*.7}
+\contentsline {paragraph}{Event System}{17}{section*.8}
+\contentsline {subsubsection}{\numberline {2.1.3}PEG.js}{17}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}Ace}{17}{subsubsection.2.1.4}
+\contentsline {subsection}{\numberline {2.2}User Interface (UI)}{17}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Graphical Design}{17}{subsubsection.2.2.1}
+\contentsline {paragraph}{JavaScript Specifics}{17}{section*.9}
+\contentsline {paragraph}{Adobe Air Specifics}{17}{section*.10}
+\contentsline {subsubsection}{\numberline {2.2.2}The basics of the GUI design}{18}{subsubsection.2.2.2}
+\contentsline {paragraph}{UI Object}{18}{section*.11}
+\contentsline {paragraph}{Window}{18}{section*.12}
+\contentsline {paragraph}{Frame}{18}{section*.13}
+\contentsline {paragraph}{Tab}{18}{section*.14}
+\contentsline {paragraph}{Context Menu}{19}{section*.15}
+\contentsline {paragraph}{Content}{19}{section*.16}
+\contentsline {subsubsection}{\numberline {2.2.3}Additional GUI components}{19}{subsubsection.2.2.3}
+\contentsline {subsection}{\numberline {2.3}Single Page Web App}{19}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Single Source Publishing}{20}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Class Diagram Specifics}{20}{subsubsection.2.4.1}
+\contentsline {paragraph}{@umlPos x:42 y:42}{20}{section*.17}
+\contentsline {paragraph}{@umlNotePos x:42 y:42}{21}{section*.18}
+\contentsline {paragraph}{@umlTitle title-text}{21}{section*.19}
+\contentsline {paragraph}{JavaDoc Comment}{21}{section*.20}
+\contentsline {subsubsection}{\numberline {2.4.2}Project Specifics}{21}{subsubsection.2.4.2}
+\contentsline {paragraph}{@umlProject root:path/folder main:path/file.java}{21}{section*.21}
+\contentsline {paragraph}{@umlIgnore path}{21}{section*.22}
+\contentsline {section}{\numberline {3}Round-trip engineering}{22}{section.3}
+\contentsline {subsection}{\numberline {3.1}Reverse engineering}{22}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Parser}{22}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Parser grammar rules}{22}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Parser grammar example}{24}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}Parser output}{24}{subsubsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.5}Class diagram generation}{27}{subsubsection.3.1.5}
+\contentsline {subsection}{\numberline {3.2}Forward engineering}{28}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Generalization}{28}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Binary association}{29}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Provided interfaces}{30}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Required interfaces}{31}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Extended interfaces}{32}{subsubsection.3.2.5}
