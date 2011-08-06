@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.7.23)  6 AUG 2011 15:13
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.7.23)  6 AUG 2011 21:33
 entering extended mode
 **thesis.tex
 (C:\bachelor\thesis.tex
@@ -436,32 +436,28 @@ File: images/class_modifier_views.png Graphic file (type png)
 
 <use images/class_modifier_views.png> [11 <C:/bachelor/images/attribute_datatyp
 e_quick_access.png (PNG copy)>]
-
-LaTeX Warning: Reference `forward_engineering_desc' on page 12 undefined on inp
-ut line 162.
-
 Missing character: There is no – in font cmr12!
 Missing character: There is no – in font cmr12!
-<images/add_association_dialog.png, id=328, 633.36626pt x 293.095pt>
+
+<images/add_association_dialog.png, id=329, 633.36626pt x 293.095pt>
 File: images/add_association_dialog.png Graphic file (type png)
 
 <use images/add_association_dialog.png> [12 <C:/bachelor/images/class_modifier_
 views.png (PNG copy)>]
-<images/add_generalization_dialog.png, id=335, 457.71pt x 163.61125pt>
+<images/add_generalization_dialog.png, id=336, 457.71pt x 163.61125pt>
 File: images/add_generalization_dialog.png Graphic file (type png)
 
 <use images/add_generalization_dialog.png> [13 <C:/bachelor/images/add_associat
 ion_dialog.png (PNG copy)> <C:/bachelor/images/add_generalization_dialog.png (P
 NG copy)>]
-<images/add_required_interface_dialog.png, id=343, 425.59pt x 162.6075pt>
+<images/add_required_interface_dialog.png, id=344, 425.59pt x 162.6075pt>
 File: images/add_required_interface_dialog.png Graphic file (type png)
 
 <use images/add_required_interface_dialog.png>
-<images/add_provided_interface_dialog.png, id=344, 386.44376pt x 163.61125pt>
+<images/add_provided_interface_dialog.png, id=345, 386.44376pt x 163.61125pt>
 File: images/add_provided_interface_dialog.png Graphic file (type png)
 
 <use images/add_provided_interface_dialog.png>
-Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
  [14 <C:/bachelor/images/add_required_interface_dialog.png (PNG copy)> <C:/bach
 elor/images/add_provided_interface_dialog.png (PNG copy)>] [15]
@@ -477,11 +473,11 @@ Missing character: There is no ’ in font cmr12!
  [17]
 Missing character: There is no ’ in font cmr12!
  [18]
-<images/gui_design.png, id=383, 642.4pt x 481.8pt>
+<images/gui_design.png, id=385, 642.4pt x 481.8pt>
 File: images/gui_design.png Graphic file (type png)
  <use images/gui_design.png>
 [19 <C:/bachelor/images/gui_design.png (PNG copy)>]
-<images/single_source.png, id=393, 594.22pt x 407.5225pt>
+<images/single_source.png, id=395, 594.22pt x 407.5225pt>
 File: images/single_source.png Graphic file (type png)
 
 <use images/single_source.png> [20 <C:/bachelor/images/single_source.png (PNG c
@@ -496,14 +492,14 @@ Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
  [22]
 Missing character: There is no ’ in font cmr12!
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 365
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 371
 .
-LaTeX Font Info:    No file OMScmss.fd. on input line 365.
+LaTeX Font Info:    No file OMScmss.fd. on input line 371.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/bx/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 365.
+(Font)              for symbol `textbraceleft' on input line 371.
 
 [23] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2004/09/05 1.3 listings language file
@@ -512,7 +508,7 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 ) [24] [25]
 [26] [27]
-<images/example_generalization.png, id=580, 284.06125pt x 254.9525pt>
+<images/example_generalization.png, id=582, 284.06125pt x 254.9525pt>
 File: images/example_generalization.png Graphic file (type png)
 
 <use images/example_generalization.png> [28 <C:/bachelor/images/example_general
@@ -522,7 +518,7 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 Missing character: There is no ’ in font cmr12!
 
-<images/example_association.png, id=586, 187.70125pt x 208.78pt>
+<images/example_association.png, id=588, 187.70125pt x 208.78pt>
 File: images/example_association.png Graphic file (type png)
 
 <use images/example_association.png> [29]
@@ -531,12 +527,12 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no – in font cmr12!
 
-<images/example_provided_interface.png, id=610, 145.54375pt x 216.81pt>
+<images/example_provided_interface.png, id=613, 145.54375pt x 216.81pt>
 File: images/example_provided_interface.png Graphic file (type png)
 
 <use images/example_provided_interface.png> [30 <C:/bachelor/images/example_ass
 ociation.png (PNG copy)>]
-<images/example_required_interface.png, id=629, 336.25626pt x 215.80624pt>
+<images/example_required_interface.png, id=632, 336.25626pt x 215.80624pt>
 File: images/example_required_interface.png Graphic file (type png)
 
 <use images/example_required_interface.png> [31 <C:/bachelor/images/example_pro
@@ -544,30 +540,27 @@ vided_interface.png (PNG copy)>]
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 
-<images/example_extended_interface.png, id=653, 145.54375pt x 227.85126pt>
+<images/example_extended_interface.png, id=656, 145.54375pt x 227.85126pt>
 File: images/example_extended_interface.png Graphic file (type png)
 
 <use images/example_extended_interface.png> [32 <C:/bachelor/images/example_req
 uired_interface.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 690.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 696.
  [33 <C:/bachelor/images/example_extended_interface.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 690.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 696.
  (C:\bachelor\thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 690.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 696.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 0F468D33A658C63943755291298FEAB7;3245.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 7993 strings out of 494053
- 122418 string characters out of 3148585
- 273195 words of memory out of 3000000
+ 7995 strings out of 494053
+ 122440 string characters out of 3148585
+ 273208 words of memory out of 3000000
  10811 multiletter control sequences out of 15000+200000
  9427 words of font info for 33 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
@@ -579,9 +572,9 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX
 /type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (33 pages, 478589 bytes).
+Output written on thesis.pdf (33 pages, 478803 bytes).
 PDF statistics:
- 787 PDF objects out of 1000 (max. 8388607)
- 347 named destinations out of 1000 (max. 500000)
+ 791 PDF objects out of 1000 (max. 8388607)
+ 349 named destinations out of 1000 (max. 500000)
  476 words of extra memory for PDF output out of 10000 (max. 10000000)
 

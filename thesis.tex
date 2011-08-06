@@ -202,8 +202,14 @@ Moreover if a class inherits from an interface, it's called provided interface a
 \end{figure}
 
 \subsubsection{Round-trip Engineering}
-AlphaUML is able to generate a class diagram with help of the included Java source files of a project. Furthermore it's also possible to generate Java source code by analyzing a class diagram. These features are provided by the "Round-trip engineering" tool, and can be executed by a simple click on its specific button. If a diagram has to be built and another one is already exists in the parent tab, the old one will be removed, before a new one can be generated. So it's necessary to use a new tab, if the old diagram shouldn’t be removed. To read more over the round-trip engineering process show \ref{reverse_eng}.\newline
-When Java sources files are generated from a diagram, they will be opened in blue accented code editor tabs, which signalize that their included documents aren’t saved yet and the documents are a result of the code generation. Furthermore the generated sources are including some special JavaDoc tags \ref{single_source}, which allow generating the identical diagram, after a restart of AlphaUML. The whole process with all necessary status information will be shown in the console tab, so the user gets an overview about the running process.
+AlphaUML is able to generate a class diagram with help of the included Java source files of a project. Furthermore it's also possible to generate Java source code by analyzing a class diagram. These features are provided by the "Round-trip engineering" tool, and can be executed by a simple click on its specific button. If a diagram has to be built and another one is already exists in the parent tab, the old one will be removed, before a new one can be generated. So it's necessary to use a new tab, if the old diagram shouldn’t be removed. To read more over the round-trip engineering process show \ref{reverse_eng}.
+
+\paragraph{Forward Engineering}
+\label{forward_engineering_desc}
+When Java sources files are generated from a diagram, they will be opened in blue accented editor tabs, which signalize that their included documents aren't saved yet and they are a result of the code generation. Furthermore the generated sources are including some special JavaDoc tags \ref{single_source}, which allow generating the identical diagram, after a restart of AlphaUML. The whole process with all necessary status information will be shown in the console tab, so the user gets an overview about the running process. 
+
+\paragraph{Reverse Engineering}
+In another case if a class diagram has to be generated, a parser parses each Java file and generates it with the help of the grammatical logic of the Java source. So it's necessary to keep with the correct Java grammar, otherwise the parser throws an error and skips the current parsed file.
 
 \newpage
 \section{Implementation}
