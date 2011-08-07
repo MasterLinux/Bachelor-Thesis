@@ -19,18 +19,18 @@
 
 \section{AlphaUML}
 \subsection{Introduction}
-AlphaUML is a simple UML tool for creating class diagrams, which supports round-trip engineering. It is designed for small projects and has its focus on being a learning tool for students. So it’s important that changes can be realized easily by a user, which will enhance the learning by doing process. Moreover AlphaUML is currently specialized for Java, so the parser supports only Java as programming language and dialogs are structured according to the Java syntax. Furthermore it has a fully integrated editor, which is useful to edit existing source code.
+AlphaUML is a simple UML tool for creating class diagrams which supports round-trip engineering. It is designed for small projects and has its focus on being a learning tool for students. So it’s important that changes can be realized easily by a user which will enhance the learning-by-doing process. Moreover, AlphaUML is currently specialized on Java, so the parser supports only Java as programming language and dialogs are structured according to the Java syntax. Furthermore it has a fully integrated editor, which is useful to edit existing source code.
 
 \subsection{Configuration}
 \label{alphauml_options}
-Some of the provided tools need to be configured. On the one hand the Java compiler \ref{javac} and on the other hand the JavaDoc generator \ref{javadoc} needs a specific file path, in which the executables are. In this case the "bin" directory of Java installation. Those paths can be set in the AlphaUML options. To open the options, navigate to the "File" menu and select the "Options" entry. Without the configuration, each of those programs throws an error and can't be executed.
+Some of the provided tools need to be configured. The Java compiler \ref{javac} on the one hand and the JavaDoc generator \ref{javadoc} on the other hand need a specific file path, in which the executables are. In this case the "bin" directory of Java installation. Those paths can be set in the AlphaUML options. To open the options, navigate to the "File" menu and select the "Options" entry. Without the configuration, each of those programs throws an error and can't be executed.
 
 \subsection{Projects}
 \subsubsection{New Project}
 \subsubsection{Load Existing Project}
 
 \subsection{Console}
-The console is a very useful tool to get information about the forward and reverse engineering process. It displays the current step of the executed process and catches errors. When a parsing error occurred the parser throws a message with all necessary information, like the Java file which causes the error and in which line and position it occurs. Furthermore it's able to execute the Java compiler \ref{javac} or the JavaDoc generator \ref{javadoc} by using their specific commands.
+The console is a useful tool to get information about the forward and reverse engineering process. It displays the current step of the executed process and catches errors. When a parsing error occurs the parser throws a message with all necessary information, like the Java file which causes the error and in which line and position it occurs. Furthermore it's able to execute the Java compiler \ref{javac} or the JavaDoc generator \ref{javadoc} by using their specific commands.
 
 \begin{figure}[H]
 \centering
@@ -40,7 +40,7 @@ The console is a very useful tool to get information about the forward and rever
 
 \subsubsection{Java Compiler}
 \label{javac}
-To compile the current opened project, it's possible to execute the "javac" command via the command line of the console. Currently it saves the generated class file of an associated Java File in the "build" folder of the project, which will be found in the projects root. Moreover when the compiler throws an error, the console displays it. \newline To be able to execute the "javac" command the console needs the path of the Java compiler, which has to be set in the AlphaUML options \ref{alphauml_options}.
+To compile the currently opened project, the command "javac" can be used via the command line of the console. Currently it saves the generated class file of an associated Java File in the "build" folder of the project, which can be found in the project's root. Moreover, when the compiler throws an error, the console displays it. \newline To be able to execute the "javac" command the console needs the path of the Java compiler, which has to be set in the AlphaUML options \ref{alphauml_options}.
 
 \paragraph{Command}
 javac
@@ -53,7 +53,7 @@ javac
  
 \subsubsection{JavaDoc Generator}
 \label{javadoc}
-It's also possible to generate documentation with the help of the JavaDoc generator. It collects each Java file of the project, which isn't ignored for those processes, and places the generated documentation into the "docs" folder of the projects root. \newline Like the "javac" command the "javadoc" command will be executed via the command line of the console and needs a correct configuration in the AlphaUML options \ref{alphauml_options}.
+It's also possible to generate documentation with the help of the JavaDoc generator. It collects each Java file of the project, which isn't ignored for those processes, and places the generated documentation into the "docs" folder of the project's root. \newline Like the "javac" command the "javadoc" command can be executed via the command line of the console and needs a correct configuration in the AlphaUML options \ref{alphauml_options}.
 
 \paragraph{Command}
 javadoc
@@ -65,8 +65,8 @@ javadoc
 \end{figure}
 
 \subsection{Code Editor}
-The code editor, as a main feature of AlphaUML, is an advanced editor, with various functionalities, like the searching and replacing of code snippets and the syntax highlighting. The editor is based on Ace \ref{ace_editor} an open source editor written in JavaScript. Mainly Ace provides a huge collection of supported programming languages, like JavaScript, C/C++ or Java, but is optimized for editing JavaScript and CoffeeScript. So some features aren't supported in AlphaUML, like the showing of syntax errors. But this feature is available thru the round-trip engineering and compiling process, which errors are shown in the console.
-The editor in AplhaUML is optimized for Java and text files and is able to save those files. If a new Java file will be created without a specific file path - for example after the code generation process – a file dialog will be opened, which can used to save those. Another feature, - which is useful if a user believes that the used font is too small, especially 'caused an amblyopic - can increment or decrement the font size. The last possibility is to search and replace parts of source code or other keywords, which will be necessary if a document includes a huge number of characters, and the user will search something special.
+The code editor, which is one of the main features of ALphaUML, is an advanced editor with various functionalities like searching and replacing code snippets and syntax highlighting. The editor is based on Ace \ref{ace_editor} - an open source editor written in JavaScript. Ace provides a huge collection of supported programming languages like JavaScript, C/C++ or Java, but is optimized for editing JavaScript and CoffeeScript. This is the reason why some features aren't supported in AlphaUML like showing syntax errors. But this feature is available through the round-trip engineering and compiling process, where errors are shown in the console.
+The editor in AplhaUML is optimized for Java and text files and is able to save those files. If a new Java file is created without a specific file path - for example after the code generation process – a file dialog is opened, which can be used to save those files. Another feature provided by the code editor is to increment or decrement the font-size. This is especially useful whenever a user believes that the used font is too small which can be caused by an amblyopic. It's also possible to search and replace parts of the source code. This can be necessary if a document contains a huge number of characters and the user searches a specific part of the source code.
 
 \begin{figure}[H]
 \centering
@@ -75,7 +75,7 @@ The editor in AplhaUML is optimized for Java and text files and is able to save 
 \end{figure}
 
 \subsection{Class Diagram Editor}
-The class diagram editor is a small editor to draft class diagrams with a handful of tools to create classes, notes or for example generalizations. It simply consists of two components, the workspace and the toolbar, which gives access to each necessary tool. Moreover each tool is optimized for the Java programming language, to enhance Java developers.
+The class diagram editor is a small editor to draft class diagrams with a handful of tools. These tools create classes, notes or relations like generalizations between existing classes. It consists of two components: the workspace and the toolbar, which gives access to each tool. Each tool is optimized for the Java programming language, to enhance Java developers.
 
 \begin{figure}[H]
 \centering
@@ -83,11 +83,11 @@ The class diagram editor is a small editor to draft class diagrams with a handfu
 \caption{Layout of the class diagram editor}
 \end{figure}
 
-\paragraph{Multiple usages of tools}
-'Cause of the visual resemblance of some UML components, like the generalization- and a provided interface arrow, and the idea to provide a simple user interface without a huge collection of buttons, some tools will be used for multiple usages. Each tool uses depending on what type of action is registered, for example what type of classes are selected, their specific functionality. If a user use the "Add Generalization" tool and selects two classes a generalization will be created, but if the user selects an interface and a class, the tool adds a provided interface. To simplify the usage of those tools tooltips will be used to show each possible usage.
+\paragraph{Multiple use-cases of tools}
+Some of the tools can be used in multiple ways. This is because certain UML components visually resemble each other. For example the generalization- and a provided interface arrow use the same arrowhead. Moreover it allows keeping the UI simple, because it isn't necessary to provide a huge number of buttons. If a user uses the "Add Generalization" tool and selects two classes a generalization will be created, but if the user selects an interface and a class, the tool adds a provided interface. To simplify the usage of those tools tooltips will be used to show each possible usage.
 
 \paragraph{Supported UML notation elements}
-The editor supports the following UML notation elements, which will be described in the next chapters.
+The editor supports the following UML notation elements, which are described in the next chapters.
  
 \begin{enumerate}
 \item Class \ref{class_desc}
@@ -108,7 +108,7 @@ A class is a structural design for objects and contains attributes and operation
 \caption{Dialog for adding a new class}
 \end{figure}
 
-After placing the class a dialog will be opened to configure the new class. It allows setting a class name, modifier or its visibility. Furthermore it's also possible to implement interfaces or to inherit from another class via the "Extends" option.\newline A special characteristic of each dialog, which will be used to add a class diagram-component, is its subdivision into 2 parts. On the top there is a preview, which shows the result of the current configuration as Java and a UML component. And at the bottom each component property can be set. So the user can see his changes directly.
+After placing the class a dialog is opened to configure the new class. It allows setting a class name, modifier or its visibility. Furthermore it's also possible to implement interfaces or to inherit from another class via the "Extends" option.\newline A special characteristic of each dialog, which is used to add a class diagram-component, is its subdivision into 2 parts. On the top there is a preview, which shows the result of the current configuration as Java and a UML component. And at the bottom each component property can be set. So the user can see his changes directly.
 
 \begin{figure}[H]
 \centering
@@ -117,7 +117,7 @@ After placing the class a dialog will be opened to configure the new class. It a
 \label{desc_class}
 \end{figure}
 
-When a class is placed, it provides a various number of functionalities, like the adding of attributes or operations. The most mentionable functionality is the context menu of a class, which gives access to the “Edit Class” tool and gives possibilities to rename or remove the class. The context menu will be opened by a click on the class name. For adding a new attribute the plus icon beside the "Attribute" header - Figure \ref{desc_class} number 1 - has to be clicked, which opens the "Add Attribute" dialog.
+When a class is placed, it provides a number of functionalities like adding attributes or operations. The most important functionality is the context menu of a class, which gives access to the “Edit Class” tool and gives possibilities to rename or remove the class. The context menu is opened by a click on the class name. For adding a new attribute the plus icon beside the "Attribute" header - Figure \ref{desc_class} number 1 - has to be clicked, which opens the "Add Attribute" dialog.
 
 \begin{figure}[H]
 \centering
@@ -125,7 +125,7 @@ When a class is placed, it provides a various number of functionalities, like th
 \caption{Dialog for adding a new attribute}
 \end{figure}
 
-Furthermore to create a new operation, the plus icon beside the "Operation" header  - Figure \ref{desc_class} number 2 -  is the way to go, to open the specific dialog.
+To create a new operation, the plus icon beside the "Operation" header  - Figure \ref{desc_class} number 2 -  is the way to open the specific dialog.
 
 \begin{figure}[H]
 \centering
@@ -133,7 +133,7 @@ Furthermore to create a new operation, the plus icon beside the "Operation" head
 \caption{Dialog for adding a new operation}
 \end{figure}
 
-Secondary to the typical operation properties, like the name, it's possible to add parameters via the "Add Operation" dialog. Parameters can also be added by using its plus icon, which is shown in any operation entry. In both cases the same dialog for adding parameters will be opened.
+In addition to the typical operation properties it's possible to add parameters via the "Add Operation" dialog. Parameters can also be added by using its plus icon, which is shown in any operation entry. In both cases the same dialog for adding parameters is opened.
 
 \begin{figure}[H]
 \centering
@@ -141,7 +141,7 @@ Secondary to the typical operation properties, like the name, it's possible to a
 \caption{Dialog for adding a new parameter}
 \end{figure}
 
-Each operation and attribute is build-on so called tags, which are all clickable. A click on the name of an attribute or operation will open a context menu for configuring and deleting it. Each other tag is used for a quick access on its value. So it's possible to change the data type of an attribute by clicking on it and selecting another one from the opened context menu.
+Each operation and attribute is build on so-called tags, which are all clickable. A click on the name of an attribute or operation will open a context menu for configuring and deleting it. Each other tag is used for a quick access on its value. So it's possible to change the data type of an attribute by clicking on it and selecting another one from the opened context menu.
 
 \begin{figure}[H]
 \centering
@@ -149,7 +149,7 @@ Each operation and attribute is build-on so called tags, which are all clickable
 \caption{Quick access}
 \end{figure}
 
-In some cases a Java modifier can't display as specific UML keyword. So it's commonly accepted to display attributes or operations with a different formation. Abstract class members will be shown with an italic font and static members are underlined. In addition final members use the \{readOnly\} property.
+In some cases a Java modifier can't display as specific UML keyword. So it's commonly accepted to display attributes or operations with a different formation. Abstract class members are shown with an italic font and static members are underlined. In addition final members use the \{readOnly\} property.
 
 \begin{figure}[H]
 \centering
@@ -159,11 +159,11 @@ In some cases a Java modifier can't display as specific UML keyword. So it's com
 
 \subsubsection{Note}
 \label{note_desc}
-A note is used to document a specific class. Its comment will be also used to generate with it a JavaDoc comment, during the forward engineering process \ref{forward_engineering_desc}. It's also possible to create a note without a relation to a class, which could be useful for small memos. To create a note the toolbar provides the "Add Note" tool, which allows placing a note into the workspace. If it's necessary to connect a note to a class the "Add Association" tool \ref{association_desc} will be used.
+A note is used to document a specific class. Its comment will also be used to generate a JavaDoc comment during the forward engineering process \ref{forward_engineering_desc}. It's also possible to create a note without a relation to a class, which could be useful for small memos. To create a note the toolbar provides the "Add Note" tool, which allows placing a note into the workspace. If it's necessary to connect a note to a class the "Add Association" tool \ref{association_desc} can be used.
 
 \subsubsection{Binary Association}
 \label{association_desc}
-When a class refers to another class, a binary association is used to visualize a relation between these classes. An association allows declaring the direction of the navigation, which defines in which class a reference, will be used. Moreover it's possible to set the role – name of its reference – and the multiplicity to set the min and max number of instances. The association name is only a notation element for an easier readability of the association and won't be used as a property of an instance.\newline To create a binary association the "Add Association" tool has to be activated. Then the two classes which will be in relation have to be selected. And after these steps a dialog will be opened, which provides the configuration of all necessary association properties.
+When a class refers to another class, a binary association is used to visualize a relation between these classes. An association allows declaring the direction of the navigation, which defines in which class a reference is used. Moreover, it's possible to set the role of a class which is the name of its reference. Furthermore the multiplicity to set the min and max number of allowed instances, can also be set. The association name is a notation element for an easier readability of the association and won't be used as a property of an instance.\newline To create a binary association the "Add Association" tool has to be activated. Then the two classes desired classes have to be selected. And after these steps a dialog is opened, which provides the configuration of all necessary association properties.
 
 \begin{figure}[H]
 \centering
@@ -173,7 +173,7 @@ When a class refers to another class, a binary association is used to visualize 
 
 \subsubsection{Generalization}
 \label{generalization_desc}
-A generalization describes a relation between a super- and a subclass and specifies that the subclass inherits from the superclass. So each attribute and operation of the superclass is also available in the subclass. It's also possible overwriting an operation, which can be handled by declaring the same operation with identical parameters like the one in the superclass. Otherwise the superclass operation will be used. To set a generalization the "Add Generalization" tool of the toolbar is used. After activating it the superclass has to be selected and then the subclass, which opens a dialog for setting it up. To edit this relation it's possible to click the generalization for opening a context menu, which allows the deletion of it also.
+A generalization describes a relation between a super- and a subclass and specifies that the subclass inherits from the superclass. So each attribute and operation of the superclass is also available in the subclass. It's also possible to overwrite an operation, which can be handled by declaring the same operation with identical parameters like the one in the superclass. Otherwise the superclass operation will be used. To set a generalization the "Add Generalization" tool of the toolbar is used. After activating it the superclass has to be selected and then the subclass, which opens a dialog for setting it up. To edit this relation it's possible to click the generalization for opening a context menu, which also allows its deletion.
 
 \begin{figure}[H]
 \centering
@@ -183,7 +183,7 @@ A generalization describes a relation between a super- and a subclass and specif
 
 \subsubsection{Required Interface}
 \label{required_interface_desc}
-An interface is a special kind of an abstract class, with the different that it's possible to inherit more than one interface. When a class uses a specific interface it's called a required interface, which can be set with the "Add Association" tool.
+An interface is a special kind of an abstract class, with the difference that it's possible to inherit more than one interface. When a class uses a specific interface it's called a required interface, which can be set with the "Add Association" tool.
 
 \begin{figure}[H]
 \centering
@@ -193,7 +193,7 @@ An interface is a special kind of an abstract class, with the different that it'
 
 \subsubsection{Provided Interface}
 \label{provided_interface_desc}
-Moreover if a class inherits from an interface, it's called provided interface and can be set via the "Add Generalization" tool.
+Moreover, if a class inherits from an interface, it's called provided interface and can be set via the "Add Generalization" tool.
 
 \begin{figure}[H]
 \centering
@@ -202,14 +202,14 @@ Moreover if a class inherits from an interface, it's called provided interface a
 \end{figure}
 
 \subsubsection{Round-trip Engineering}
-AlphaUML is able to generate a class diagram with help of the included Java source files of a project. Furthermore it's also possible to generate Java source code by analyzing a class diagram. These features are provided by the "Round-trip engineering" tool, and can be executed by a simple click on its specific button. If a diagram has to be built and another one is already exists in the parent tab, the old one will be removed, before a new one can be generated. So it's necessary to use a new tab, if the old diagram shouldn’t be removed. To read more over the round-trip engineering process show \ref{reverse_eng}.
+AlphaUML is able to generate a class diagram with the help of included Java source files of a project. Furthermore it's also possible to generate Java source code by analyzing a class diagram. These features are provided by the "Round-trip engineering" tool and can be executed by a simple click on its specific button. If a diagram has to be built and another one already exists in the parent tab, the old one is removed before a new one can be generated. So it's necessary to use a new tab, if the old diagram shouldn't be removed. To read more about the round-trip engineering process see \ref{reverse_eng}.
 
 \paragraph{Forward Engineering}
 \label{forward_engineering_desc}
-When Java sources files are generated from a diagram, they will be opened in blue accented editor tabs, which signalize that their included documents aren't saved yet and they are a result of the code generation. Furthermore the generated sources are including some special JavaDoc tags \ref{single_source}, which allow generating the identical diagram, after a restart of AlphaUML. The whole process with all necessary status information will be shown in the console tab, so the user gets an overview about the running process. 
+When Java source files are generated from a diagram, they are opened in blue accented editor tabs, which signalize that their included documents aren't saved yet and they are a result of the code generation. Furthermore the generated sources include special JavaDoc tags \ref{single_source}, which allow generating the identical diagram after a restart of AlphaUML. The whole process with all necessary status information is shown in the console tab, so the user gets an overview of the running process. 
 
 \paragraph{Reverse Engineering}
-In another case if a class diagram has to be generated, a parser parses each Java file and generates it with the help of the grammatical logic of the Java source. So it's necessary to keep with the correct Java grammar, otherwise the parser throws an error and skips the current parsed file.
+In another case if a class diagram has to be generated, a parser parses each Java file and generates it with the help of the grammatical logic of the Java source. So it's necessary to use the correct Java grammar, otherwise the parser throws an error and skips the currently parsed file.
 
 \newpage
 \section{Implementation}

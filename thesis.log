@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.7.23)  6 AUG 2011 21:33
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.7.23)  7 AUG 2011 15:40
 entering extended mode
 **thesis.tex
 (C:\bachelor\thesis.tex
@@ -436,9 +436,6 @@ File: images/class_modifier_views.png Graphic file (type png)
 
 <use images/class_modifier_views.png> [11 <C:/bachelor/images/attribute_datatyp
 e_quick_access.png (PNG copy)>]
-Missing character: There is no – in font cmr12!
-Missing character: There is no – in font cmr12!
-
 <images/add_association_dialog.png, id=329, 633.36626pt x 293.095pt>
 File: images/add_association_dialog.png Graphic file (type png)
 
@@ -457,10 +454,9 @@ File: images/add_required_interface_dialog.png Graphic file (type png)
 <images/add_provided_interface_dialog.png, id=345, 386.44376pt x 163.61125pt>
 File: images/add_provided_interface_dialog.png Graphic file (type png)
 
-<use images/add_provided_interface_dialog.png>
-Missing character: There is no ’ in font cmr12!
- [14 <C:/bachelor/images/add_required_interface_dialog.png (PNG copy)> <C:/bach
-elor/images/add_provided_interface_dialog.png (PNG copy)>] [15]
+<use images/add_provided_interface_dialog.png> [14 <C:/bachelor/images/add_requ
+ired_interface_dialog.png (PNG copy)> <C:/bachelor/images/add_provided_interfac
+e_dialog.png (PNG copy)>] [15]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
@@ -572,7 +568,7 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX
 /type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (33 pages, 478803 bytes).
+Output written on thesis.pdf (33 pages, 478727 bytes).
 PDF statistics:
  791 PDF objects out of 1000 (max. 8388607)
  349 named destinations out of 1000 (max. 500000)

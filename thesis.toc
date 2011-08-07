@@ -11,7 +11,7 @@
 \contentsline {paragraph}{Command}{6}{section*.3}
 \contentsline {subsection}{\numberline {1.5}Code Editor}{6}{subsection.1.5}
 \contentsline {subsection}{\numberline {1.6}Class Diagram Editor}{7}{subsection.1.6}
-\contentsline {paragraph}{Multiple usages of tools}{8}{section*.4}
+\contentsline {paragraph}{Multiple use-cases of tools}{8}{section*.4}
 \contentsline {paragraph}{Supported UML notation elements}{8}{section*.5}
 \contentsline {subsubsection}{\numberline {1.6.1}Class}{8}{subsubsection.1.6.1}
 \contentsline {subsubsection}{\numberline {1.6.2}Note}{12}{subsubsection.1.6.2}
