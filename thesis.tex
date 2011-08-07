@@ -214,19 +214,19 @@ In another case if a class diagram has to be generated, a parser parses each Jav
 \newpage
 \section{Implementation}
 \subsection{Frameworks}
-AlphaUML use a handful collection of libraries, which are used to improve the development process and allows the access to necessary system information, like the file system. Each framework is based on JavaScript, like AlphaUML, or supports JavaScript, so it’s theoretical possible to run the application in a web browser.
+AlphaUML uses a collection of libraries, which are used to improve the development process and allow access to necessary system information like the file system. Each framework is based on JavaScript or supports JavaScript, so it's theoretically possible to run the application in a web browser.
 
 \subsubsection{Adobe Air}
-With Adobe Air it’s possible to create web applications, which will be executed as a native application on a desktop PC or a tablet. It supports the development in JavaScript and HTML and provides a library, which gives access to some system side functions and programs, like the command console or the file system. Adobe Air use the WebKit engine to allow to execute a JavaScript application. This fact is also necessary to know for designing the application \ref{css}.
+With Adobe Air it's possible to create web applications, which can be executed as native applications on a desktop PC or a tablet. It supports the development in JavaScript and HTML and provides a library, which gives access to some system side functions and programs like the command console or the file system. Adobe Air uses the WebKit engine to allow executing JavaScript applications. It is necessary to keep this fact in mind when designing the application \ref{css}.
 
 \subsubsection{Dojo Toolkit}
-Dojo is an enhanced framework to build JavaScript web applications (apps) and provides a huge number of features, which speeds up the development. Furthermore it’s very useful to build JavaScript apps in an object oriented style. So it allows to use a package system, has a build-in class system, which simulates for example inheritance. In addition one of the most important features is the event system. So user-triggered events, like an "onclick" event can be caught. Moreover self-defined events can be thrown, which release specific functions to react on these events. 
+Dojo is an enhanced framework to build JavaScript web applications (apps) and provides a huge number of features, which speed up the development. Furthermore it's very useful to build JavaScript apps in an object oriented style. So it allows to use a package system, has a build-in class system, which simulates various oop-related features -- such as inheritance. In addition one of the most important features is the event system. With the help of this system user-triggered events like an "onclick" event can be caught. Moreover, self-defined events can be thrown, which release specific functions to react on these events. 
 
 \paragraph{Package System}
-The package system is based on the folder structure of its project. So if a JavaScript file has the following path "lib/ui/Dialog.js" and it’s necessary to get access to the Dialog class, the dojo.require function has to include this file by setting its path as first parameter. The “require” function includes the file during the runtime, so it isn't necessary to load the whole script at the beginning, which will saving a lot of loading time.
+The package system is based on the folder structure of its project. So if a JavaScript file has the following path "lib/ui/Dialog.js" and it’s necessary to get access to the Dialog class, the dojo.require function has to include this file by setting its path as first parameter. The “require” function includes the file during the runtime, so it isn't necessary to load the whole script at the beginning, which saves a lot of loading time.
 
 \paragraph{Class System} 
-The class system allows the declaration of classes and provides inheritance, which is necessary to develop software in object oriented style. So JavaScript is object oriented, but doesn't support to inherit from another object and it doesn't have classes. So Dojo uses some tricks to simulate these features.
+The class system allows the declaration of classes and provides inheritance, which is necessary to develop software in an object oriented style. JavaScript is object oriented, but doesn't support inheritance from another object and it doesn't have classes. So Dojo uses some tricks to simulate these features.
 
 \begin{itemize}
 	\item{\href{http://javascript.crockford.com/prototypal.html}{Prototypal Inheritance}}
@@ -235,10 +235,10 @@ The class system allows the declaration of classes and provides inheritance, whi
 \end{itemize}
 
 \paragraph{Event System}
-The use of events is particularly in JavaScript useful. So on the one hand it’s necessary to catch events from the DOM, which thrown by the user, for example on a click on a button. On the other hand self-defined events allow reacting in special cases, if an error is thrown or a specific routine is ready. In those cases a so called callback method can be executed, which can handle the result of the routine or shows for example an error message.
+The use of events is particularly useful in JavaScript. On the one hand it's necessary to catch events from the DOM, which are thrown by the user, for example in reaction to a click on a button. On the other hand self-defined events allow reacting in special cases, if an error is thrown or a specific routine is ready. In those cases a so called callback method can be executed, which can handle the result of the routine or shows an error message for example.
 
 \subsubsection{PEG.js}
-PEG.js is a JavaScript library, which generates a parser with the help of a specific grammar. So it’s possible to parse each programming language or to build a calculator, or something else. For more information show \ref{pegjs}.
+PEG.js is a JavaScript library, which generates a parser with the help of a specific grammar. So it’s possible to parse each programming language or to build a calculator, or something else. For more information see \ref{pegjs}.
 
 \subsubsection{Ace}
 \label{ace_editor}
@@ -247,32 +247,32 @@ Ace is a fast code editor with syntax highlighting and search- and replace-funct
 \subsection{User Interface (UI)}
 \subsubsection{Graphical Design}
 \label{css}
-To design the graphical user interface a style sheet language called cascading style sheets (CSS) is used. It describes the presentation semantics, which formats and sets the look of a HTML document. So it's possible to set the floating of elements, the size, the background color, specific fonts and many other formatting. In addition the style sheet is able to format each HTML element with an id or a class attribute. Classes will be accessed by a point and ids by a hash-symbol. If an element has a class called "Button" the selector looks like .Button and if an element has the id "dialog\_1" the selector will be \#dialog\_1. 'Cause of the HTML limitation, that an id is unique, the id selector will format only one element, wherever the class selector is able to format an unlimited number of elements.
+To design the graphical user interface a style sheet language called cascading style sheets (CSS) is used. It describes the presentation semantics, which formats and sets the look of a HTML document. So it's possible to set the floating of elements, the size, the background color, specific fonts and many other formatting-related features. In addition the style sheet is able to format each HTML element with an id or a class attribute. Because of the HTML limitation, that an id is unique, the id selector will format only one element, wherever the class selector is able to format an unlimited number of elements.
 
 \paragraph{JavaScript Specifics} 
-In JavaScript CSS is also used for animations. So if the position of a DOM node will be changed, the element has to have an absolute position and the top and left property have to set. JavaScript writes that information in the DOM node and the web browser updates its view, which is need to realize a drag and drop feature or animations, like color and size changes.
+In JavaScript, CSS is also used for animations. So if the position of a DOM node is changed, the element has to have an absolute position and the top and left property have to be set. JavaScript writes that information in the DOM node and the web browser updates its view, which is needed to realize a drag and drop feature or animations, like color and size changes.
 
 \paragraph{Adobe Air Specifics} 
-The Adobe Air HTML- and JavaScript engine is based on WebKit, an open source web browser engine. So it's necessary to know that some CSS features like text- or box-shadows need the prefix "-webkit-", which usage will shown in the example below.
+The Adobe Air HTML- and JavaScript engine is based on WebKit, an open source web browser engine. So it's necessary to know that some CSS features like text- or box-shadows need the prefix "-webkit-". The usage will be shown in the example below.
 
 \subsubsection{The basics of the GUI design}
 \paragraph{UI Object}
-Each UI element, like a tab or the file tree, inherits from a base class called ui.Object. This class provides the managing of event listener, the creation of a unique id or handles the deletion of the UI element. Furthermore it implies some useful utilities, like hiding or showing the UI element. But one of the most important features is the event manager. So it's necessary to unset each event listener, which listen to a removed DOM node. In addition the event manager provides the registration of new event listener for specific events and can deactivate, activate or remove each listener by name. Furthermore it's possible to activate or deactivate all listeners at the same time, what's necessary if a UI object will be destroyed. The "activate" and "deactivate" function can be overwritten to extend the functionality, by example to destroy the DOM node at deactivating. Another important feature is the generation of a unique id for the DOM node of the UI element. So the HTML standard defines that an id has to use once only. If two nodes have the same id, the JavaScript engine of the web-browser can't get access to both. To get a unique id the id-creator uses the class name as base and searches for other nodes of that class, counts each appearance and appends the counter to the class name. The last mentionable function of the base class is the deletion handling. To be sure that each registered event listener and each used UI element of an UI element, like a button of a dialog, including the DOM node will be destroyed, the base class has a specific destroy function, which handles the "garbage collection". To initialize an UI object a function called "create" will be used. It generates a unique id, places the DOM node and sets up all necessary event listeners. A UI object has a specific uitype, which will be used to identify a DOM node as a UI element. It will be set as a HTML attribute and can be accessed on a catch event.
+Each UI element, like a tab or the file tree, inherits from a base class called ui.Object. This class provides the management of event listeners, the creation of a unique id or handles the deletion of the UI element. Furthermore, it implies some useful utilities, like hiding or showing the UI element. But one of the most important features is the event manager. So it's necessary to unset each event listener, which listens to a removed DOM node. In addition, the event manager provides the registration of new event listeners for specific events and can deactivate, activate or remove each listener by name. Furthermore it's possible to activate or deactivate all listeners at the same time, what's necessary if a UI object is destroyed. The "activate" and "deactivate" function can be overwritten to extend the functionality, for example to destroy the DOM node on deactivation. Another important feature is the generation of a unique id for the DOM node of the UI element. So the HTML standard defines that an id has to be used only once. If two nodes have the same id, the JavaScript engine of the web-browser can't get access to both. To get a unique id the id-creator uses the class name as base and searches for other nodes of that class, counts each appearance and appends the counter to the class name. The last mentionable function of the base class is the deletion handling. To be sure that each registered event listener and each used UI element of an UI element, like a button of a dialog, including the DOM node is destroyed, the base class has a specific destroy function, which handles the "garbage collection". To initialize an UI object a function called "create" is used. It generates a unique id, places the DOM node and sets up all necessary event listeners. An UI object has a specific uitype, which is used to identify a DOM node as a UI element. It is set as a HTML attribute and can be accessed on a catch event.
 
 \paragraph{Window}
-On the top of the GUI the window object manages the resizing and the full-screen mode of the Adobe Air window. It contains a collection of frames, which will be placed and resized with the help of the current window properties.
+On the top of the GUI, the window object manages the resizing and the full-screen mode of the Adobe Air window. It contains a collection of frames, which are placed and resized with the help of the current window properties.
 
 \paragraph{Frame}
-A frame is the main actor in handling tabs and its content. In addition it resizes the tab content, like the Java editor or the file tree, and allows opening new tabs. In addition it handles the replacing and deletion of tabs. To drag a tab into another frame, the tab, its content and context menu will be removed from the old frame and replaced into the new one. In this case only the DOM nodes will be destroyed, but the Meta data - like the source code of a specific editor tab - because it’s necessary to be able to recreate the tab.
+A frame is the main actor in handling tabs and its content. In addition, it resizes the tab content, like the Java editor or the file tree, and allows opening new tabs. In addition, it handles replacing and deleting tabs. To drag a tab into another frame, the tab, its content and context menu are removed from the old frame and placed into the new one. In this case, only the DOM nodes are destroyed, in which the Meta data like the source code of a specific editor tab keep stored because the Meta data is necessary for recreating the tab.
 
 \paragraph{Tab}
-A tab is only a draggable button, which references to its content and context menu. It's used to show or hide a specific content, like a code editor. A tab is subdivided into 3 parts. At first the tab themselves, which handles the create- and destroy-process of its content and context menu. In addition it starts its replacing process, which will be handled by the parent frame, if a user begins to drag the tab.
+A tab is a draggable button, which references its content and context menu. It's used to show or hide a specific content, like a code editor. A tab is subdivided into three parts. At first, the tab itself, which handles the create- and destroy-process of its content and context menu. In addition it starts its replacing process, which will be handled by the parent frame, if a user begins to drag the tab.
 
 \paragraph{Context Menu}
 The next part of a tab is its context menu. The context menu holds a collection of buttons, which can be used to execute specific functions of a tab. For example the editor tab has buttons to save its current document or to resize the font size.
 
 \paragraph{Content}
-The last part is the content object. It provides the access of some tools, like the class diagram editor, a Java editor or a file tree.
+The last part is the content object. It provides access to some tools, like the class diagram editor, a Java editor or a file tree.
 
 \begin{figure}[H]
 \centering
@@ -289,11 +289,11 @@ The GUI framework provides a number of UI components, which will be necessary fo
 \end{description}
 
 \subsection{Single Page Web App}
-Usually a web application is using a handful of HTML pages for rendering its content. A single page web app has only one HTML document, which will be updated by some JavaScript functions. So it's possible to place, replace or remove DOM nodes during the runtime. Another characteristic of a web application is its fragmentation into backend - usually server-side - and frontend - client-side -, which concept is also be used in a single page web app. But AlphaUML is designed as a single page web app without a backend, which could be used for parsing or for getting access to files from storage. All these functionality is transferred to the frontend, so each process will be executed on the client side. To realize that concept, the compiler and any other feature is completely written in JavaScript. In addition Adobe Air is used to get access to functionalities, which JavaScript isn't allowed to. For example JavaScript can't get access to the file system of a client, 'cause of security reasons. In this case Adobe Air is the way to go.
+Usually a web application is using a number of HTML pages for rendering its content. A single page web app has only one HTML document, which is updated by some JavaScript functions. So it's possible to place, replace or remove DOM nodes during runtime. Another characteristic of a web application is its fragmentation into backend -- usually server-side -- and frontend -- client-side. This concept is also used by single page web apps. AlphaUML however, is designed as a single page web app without a backend, which could be used for parsing or getting access to files from storage. All these functionalities are transferred to the frontend, so each process is executed on the client side. To realize that concept, the compiler and any other feature is completely written in JavaScript. In addition, Adobe Air is used to get access to functionalities, which JavaScript doesn't have. For example JavaScript can't get access to the file system of a client, because of security reasons. In this case Adobe Air helps.
 
 \subsection{Single Source Publishing}
 \label{single_source}
-To avoid project files AlphaUML follows the single source publishing concept. It allows using the context of a document in different ways. In this case a Java document is used to initialize a project or to generate a class-diagram, without losing its specific usage as source file. So each necessary project-information will be saved into existing Java files. This is realized by using a various selection of specific JavaDoc tags, which begin with the @uml prefix. To use those tags the compiler is optimized to read them during the reverse engineering process \ref{reverse_eng}. Furthermore the UML specific tags will be generated by the code generator \ref{forward_eng}. 
+To avoid project files AlphaUML follows the single source publishing concept. It allows using the context of a document in different ways. In this case a Java document is used to initialize a project or to generate a class-diagram, without losing its specific usage as source file. So each necessary project-information is saved into existing Java files. This is realized by using a selection of specific JavaDoc tags, which begin with the @uml prefix. To use those tags the compiler is optimized to read them during the reverse engineering process \ref{reverse_eng}. Furthermore UML specific tags are generated by the code generator \ref{forward_eng}.
 
 \begin{figure}[H]
 \centering
@@ -311,14 +311,14 @@ If a class has a comment included, the position of the note will be stored in th
 The title-tag defines the title of the last generated class-digram.
 
 \paragraph{JavaDoc Comment}
-A special case is the JavaDoc comment itself. It is used to generate notes, which will be pinned to its associated class. In addition if the user creates a new note, the code generator uses as JavaDoc class comment. Moreover multiple usages of notes are allowed, so each note comment will be merged to one comment.
+A special case is the JavaDoc comment itself. It is used to generate notes, which are pinned to their associated classes. In addition, if the user creates a new note, the code generator uses it as JavaDoc class comment. Moreover multiple usages of notes are allowed, so each note comment is merged to one comment.
 
 \subsubsection{Project Specifics}
 \paragraph{@umlProject root:path/folder main:path/file.java}
 The project-tag is used to define the project main file. It includes the relative root path and the main Java file with an absolute path.
 
 \paragraph{@umlIgnore path}
-To exclude specific files or folder, the ignore-tag allows ignoring those for the class diagram generation. That could be necessary if only a part of files should include in the class diagram, or if some Java files don’t follow the java syntax completely, 'cause of its use to store only Java snippets.
+To exclude specific files or folder, the ignore-tag allows ignoring those for the class diagram generation. That could be necessary if only a part of files should include in the class diagram, or if some Java files don’t follow the java syntax completely, because of its use to store only Java snippets.
 
 \newpage
 \section{Round-trip engineering}

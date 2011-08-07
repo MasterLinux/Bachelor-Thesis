@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.7.23)  7 AUG 2011 15:40
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.7.23)  7 AUG 2011 21:23
 entering extended mode
 **thesis.tex
 (C:\bachelor\thesis.tex
@@ -458,17 +458,11 @@ File: images/add_provided_interface_dialog.png Graphic file (type png)
 ired_interface_dialog.png (PNG copy)> <C:/bachelor/images/add_provided_interfac
 e_dialog.png (PNG copy)>] [15]
 Missing character: There is no ’ in font cmr12!
-Missing character: There is no ’ in font cmr12!
-Missing character: There is no ’ in font cmr12!
-Missing character: There is no ’ in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
-Missing character: There is no ’ in font cmr12!
  [16]
 Missing character: There is no ’ in font cmr12!
- [17]
-Missing character: There is no ’ in font cmr12!
- [18]
+ [17] [18]
 <images/gui_design.png, id=385, 642.4pt x 481.8pt>
 File: images/gui_design.png Graphic file (type png)
  <use images/gui_design.png>
@@ -560,7 +554,7 @@ Here is how much of TeX's memory you used:
  10811 multiletter control sequences out of 15000+200000
  9427 words of font info for 33 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 38i,7n,49p,1983b,1673s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,7n,49p,1971b,1673s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX
@@ -568,7 +562,7 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX
 /type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (33 pages, 478727 bytes).
+Output written on thesis.pdf (33 pages, 478209 bytes).
 PDF statistics:
  791 PDF objects out of 1000 (max. 8388607)
  349 named destinations out of 1000 (max. 500000)
