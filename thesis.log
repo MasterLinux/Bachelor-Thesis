@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.7.23)  7 AUG 2011 21:23
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.7.23)  8 AUG 2011 18:10
 entering extended mode
 **thesis.tex
 (C:\bachelor\thesis.tex
@@ -473,23 +473,16 @@ File: images/single_source.png Graphic file (type png)
 <use images/single_source.png> [20 <C:/bachelor/images/single_source.png (PNG c
 opy)>]
 Missing character: There is no ’ in font cmr12!
- [21]
+ [21] [22]
 Missing character: There is no ’ in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
-Missing character: There is no ’ in font cmr12!
- [22]
-Missing character: There is no ’ in font cmr12!
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 371
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 370
 .
-LaTeX Font Info:    No file OMScmss.fd. on input line 371.
+LaTeX Font Info:    No file OMScmss.fd. on input line 370.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/bx/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 371.
+(Font)              for symbol `textbraceleft' on input line 370.
 
 [23] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2004/09/05 1.3 listings language file
@@ -506,15 +499,11 @@ ization.png (PNG copy)>]
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-Missing character: There is no ’ in font cmr12!
-
 <images/example_association.png, id=588, 187.70125pt x 208.78pt>
 File: images/example_association.png Graphic file (type png)
 
 <use images/example_association.png> [29]
 Missing character: There is no – in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
 Missing character: There is no – in font cmr12!
 
 <images/example_provided_interface.png, id=613, 145.54375pt x 216.81pt>
@@ -527,19 +516,16 @@ File: images/example_required_interface.png Graphic file (type png)
 
 <use images/example_required_interface.png> [31 <C:/bachelor/images/example_pro
 vided_interface.png (PNG copy)>]
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
-
 <images/example_extended_interface.png, id=656, 145.54375pt x 227.85126pt>
 File: images/example_extended_interface.png Graphic file (type png)
 
 <use images/example_extended_interface.png> [32 <C:/bachelor/images/example_req
 uired_interface.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 696.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 695.
  [33 <C:/bachelor/images/example_extended_interface.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 696.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 695.
  (C:\bachelor\thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 696.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 695.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 0F468D33A658C63943755291298FEAB7;3245.
 
@@ -562,7 +548,7 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX
 /type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (33 pages, 478209 bytes).
+Output written on thesis.pdf (33 pages, 478164 bytes).
 PDF statistics:
  791 PDF objects out of 1000 (max. 8388607)
  349 named destinations out of 1000 (max. 500000)
