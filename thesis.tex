@@ -1,4 +1,4 @@
-\documentclass[fontsize=12pt,a4paper]{scrartcl}[2011/08/10]
+\documentclass[fontsize=12pt,a4paper,titlepage]{scrartcl}
 
 \usepackage{listings}
 \usepackage{courier}
@@ -15,19 +15,31 @@
 \newpage
 
 \tableofcontents
-\newpage 
+\newpage
 
 \section{AlphaUML}
 \subsection{Introduction}
-AlphaUML is a simple UML tool for creating class diagrams which supports round-trip engineering. It is designed for small projects and has its focus on being a learning tool for students. So it’s important that changes can be realized easily by a user which will enhance the learning-by-doing process. Moreover, AlphaUML is currently specialized on Java, so the parser supports only Java as programming language and dialogs are structured according to the Java syntax. Furthermore it has a fully integrated editor, which is useful to edit existing source code.
+AlphaUML is a simple UML tool for creating class diagrams which supports round-trip engineering. It is designed for small projects and has its focus on being a learning tool for students. So it's important that changes can be realized easily by a user which will enhance the learning-by-doing process. Moreover, AlphaUML is currently specialized on Java, so the parser supports only Java as programming language and dialogs are structured according to the Java syntax. Furthermore it has a fully integrated editor, which is useful to edit existing source code.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{images/alphauml.png}
+\end{figure}
 
 \subsection{Configuration}
 \label{alphauml_options}
 Some of the provided tools need to be configured. The Java compiler \ref{javac} on the one hand and the JavaDoc generator \ref{javadoc} on the other hand need a specific file path, in which the executables are. In this case the "bin" directory of Java installation. Those paths can be set in the AlphaUML options. To open the options, navigate to the "File" menu and select the "Options" entry. Without the configuration, each of those programs throws an error and can't be executed.
 
 \subsection{Projects}
+\subsubsection{Folder Structure}
+\label{folder_structure}
+AlphaUML uses a specific but not required folder structure. It is designed to be compatible to NetBeans and Eclipse, which are two common used integrated development environments (IDE). Moreover, it is also possible to use a self-defined folder structure by defining a specific source folder, which includes the Java files. In NetBeans and Eclipse usually the "src" folder is used to contain each Java file, which is used as main folder if it is found in the used project folder. Another important folder is the "build" folder -- it is used when the source code is compiled. So each compiled Java class is found there. Furthermore, for the documentation output the "docs" folder is used.
+
 \subsubsection{New Project}
+When a new project has to be created, the current opened project is closed and an empty project without any Java file is created. This project has the typical folder structure, which is described above \ref{folder_structure}. To create a new project the start menu entry "New Project" is used.
+
 \subsubsection{Load Existing Project}
+To open an existing project the "Open Project" entry of the start menu is used. It opens a specific folder, which could be any folder. If the folder contains a "src" folder AlphaUML uses it as main folder for Java source files, otherwise the user has to declare a folder himself.
 
 \subsection{Console}
 The console is a useful tool to get information about the forward and reverse engineering process. It displays the current step of the executed process and catches errors. When a parsing error occurs the parser throws a message with all necessary information, like the Java file which causes the error and in which line and position it occurs. Furthermore it's able to execute the Java compiler \ref{javac} or the JavaDoc generator \ref{javadoc} by using their specific commands.
@@ -65,8 +77,8 @@ javadoc
 \end{figure}
 
 \subsection{Code Editor}
-The code editor, which is one of the main features of ALphaUML, is an advanced editor with various functionalities like searching and replacing code snippets and syntax highlighting. The editor is based on Ace \ref{ace_editor} - an open source editor written in JavaScript. Ace provides a huge collection of supported programming languages like JavaScript, C/C++ or Java, but is optimized for editing JavaScript and CoffeeScript. This is the reason why some features aren't supported in AlphaUML like showing syntax errors. But this feature is available through the round-trip engineering and compiling process, where errors are shown in the console.
-The editor in AplhaUML is optimized for Java and text files and is able to save those files. If a new Java file is created without a specific file path - for example after the code generation process – a file dialog is opened, which can be used to save those files. Another feature provided by the code editor is to increment or decrement the font-size. This is especially useful whenever a user believes that the used font is too small which can be caused by an amblyopic. It's also possible to search and replace parts of the source code. This can be necessary if a document contains a huge number of characters and the user searches a specific part of the source code.
+The code editor, which is one of the main features of ALphaUML, is an advanced editor with various functionalities like searching and replacing code snippets and syntax highlighting. The editor is based on Ace \ref{ace_editor} -- an open source editor written in JavaScript. Ace provides a huge collection of supported programming languages like JavaScript, C/C++ or Java, but is optimized for editing JavaScript and CoffeeScript. This is the reason why some features aren't supported in AlphaUML like showing syntax errors. But this feature is available through the round-trip engineering and compiling process, where errors are shown in the console.
+The editor in AplhaUML is optimized for Java and text files and is able to save those files. If a new Java file is created without a specific file path -- for example after the code generation process -- a file dialog is opened, which can be used to save those files. Another feature provided by the code editor is to increment or decrement the font-size. This is especially useful whenever a user believes that the used font is too small which can be caused by an amblyopic. It's also possible to search and replace parts of the source code. This can be necessary if a document contains a huge number of characters and the user searches a specific part of the source code.
 
 \begin{figure}[H]
 \centering
@@ -117,7 +129,7 @@ After placing the class a dialog is opened to configure the new class. It allows
 \label{desc_class}
 \end{figure}
 
-When a class is placed, it provides a number of functionalities like adding attributes or operations. The most important functionality is the context menu of a class, which gives access to the “Edit Class” tool and gives possibilities to rename or remove the class. The context menu is opened by a click on the class name. For adding a new attribute the plus icon beside the "Attribute" header - Figure \ref{desc_class} number 1 - has to be clicked, which opens the "Add Attribute" dialog.
+When a class is placed, it provides a number of functionalities like adding attributes or operations. The most important functionality is the context menu of a class, which gives access to the "Edit Class" tool and gives possibilities to rename or remove the class. The context menu is opened by a click on the class name. For adding a new attribute the plus icon beside the "Attribute" header -- Figure \ref{desc_class} number 1 -- has to be clicked, which opens the "Add Attribute" dialog.
 
 \begin{figure}[H]
 \centering
@@ -125,7 +137,7 @@ When a class is placed, it provides a number of functionalities like adding attr
 \caption{Dialog for adding a new attribute}
 \end{figure}
 
-To create a new operation, the plus icon beside the "Operation" header  - Figure \ref{desc_class} number 2 -  is the way to open the specific dialog.
+To create a new operation, the plus icon beside the "Operation" header  -- Figure \ref{desc_class} number 2 --  is the way to open the specific dialog.
 
 \begin{figure}[H]
 \centering
@@ -223,22 +235,22 @@ With Adobe Air it's possible to create web applications, which can be executed a
 Dojo is an enhanced framework to build JavaScript web applications (apps) and provides a huge number of features, which speed up the development. Furthermore it's very useful to build JavaScript apps in an object oriented style. So it allows to use a package system, has a build-in class system, which simulates various oop-related features -- such as inheritance. In addition one of the most important features is the event system. With the help of this system user-triggered events like an "onclick" event can be caught. Moreover, self-defined events can be thrown, which release specific functions to react on these events. 
 
 \paragraph{Package System}
-The package system is based on the folder structure of its project. So if a JavaScript file has the following path "lib/ui/Dialog.js" and it’s necessary to get access to the Dialog class, the dojo.require function has to include this file by setting its path as first parameter. The “require” function includes the file during the runtime, so it isn't necessary to load the whole script at the beginning, which saves a lot of loading time.
+The package system is based on the folder structure of its project. So if a JavaScript file has the following path "lib/ui/Dialog.js" and it's necessary to get access to the Dialog class, the dojo.require function has to include this file by setting its path as first parameter. The "require" function includes the file during the runtime, so it isn't necessary to load the whole script at the beginning, which saves a lot of loading time.
 
 \paragraph{Class System} 
-The class system allows the declaration of classes and provides inheritance, which is necessary to develop software in an object oriented style. JavaScript is object oriented, but doesn't support inheritance from another object and it doesn't have classes. So Dojo uses some tricks to simulate these features.
+The class system allows the declaration of classes and provides inheritance, which is necessary to develop software in an object oriented style. JavaScript is object oriented, but doesn't support inheritance from another object and it doesn't have classes. So Dojo uses some tricks to simulate these features. The most important JavaScript tricks are shown above.
 
 \begin{itemize}
-	\item{\href{http://javascript.crockford.com/prototypal.html}{Prototypal Inheritance}}
-	\item{\href{http://javascript.crockford.com/inheritance.html}{Classical Inheritance}}
-	\item{\href{http://javascript.crockford.com/private.html}{Private Members}}
+	\item{Prototypal Inheritance \footnote{http://javascript.crockford.com/prototypal.html}}
+	\item{Classical Inheritance \footnote{http://javascript.crockford.com/inheritance.html}}
+	\item{Private Members \footnote{http://javascript.crockford.com/private.html}}
 \end{itemize}
 
 \paragraph{Event System}
 The use of events is particularly useful in JavaScript. On the one hand it's necessary to catch events from the DOM, which are thrown by the user, for example in reaction to a click on a button. On the other hand self-defined events allow reacting in special cases, if an error is thrown or a specific routine is ready. In those cases a so called callback method can be executed, which can handle the result of the routine or shows an error message for example.
 
 \subsubsection{PEG.js}
-PEG.js is a JavaScript library, which generates a parser with the help of a specific grammar. So it’s possible to parse each programming language or to build a calculator, or something else. For more information see \ref{pegjs}.
+PEG.js is a JavaScript library, which generates a parser with the help of a specific grammar. So it's possible to parse each programming language or to build a calculator, or something else. For more information see \ref{pegjs}.
 
 \subsubsection{Ace}
 \label{ace_editor}
@@ -249,11 +261,53 @@ Ace is a fast code editor with syntax highlighting and search- and replace-funct
 \label{css}
 To design the graphical user interface a style sheet language called cascading style sheets (CSS) is used. It describes the presentation semantics, which formats and sets the look of a HTML document. So it's possible to set the floating of elements, the size, the background color, specific fonts and many other formatting-related features. In addition the style sheet is able to format each HTML element with an id or a class attribute. Because of the HTML limitation, that an id is unique, the id selector will format only one element, wherever the class selector is able to format an unlimited number of elements.
 
+\lstset{
+	language=HTML, 
+	numbers=left,
+	numberstyle=\tiny,
+	stepnumber=1
+}
+
+\begin{lstlisting}[caption={HTML snippet}, frame=single]
+<div class="outer">
+	<div class="inner"></div>
+</div>
+\end{lstlisting}
+
+\begin{lstlisting}[caption={CSS snippet}, frame=single, label={css_example_snippet}]
+.outer {
+    width: 45px;
+    height: 60px;
+    margin: 10px;
+    background: #778899;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 1px #313131;
+}
+
+.inner {
+    top: 20px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background: #d3d3d3;
+    position: absolute;
+    -webkit-border-radius: 2px;
+    border: 1px solid #313131;
+}
+\end{lstlisting}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{images/css_example.png}
+\caption{result of the css formatting}
+\end{figure}
+
 \paragraph{JavaScript Specifics} 
 In JavaScript, CSS is also used for animations. So if the position of a DOM node is changed, the element has to have an absolute position and the top and left property have to be set. JavaScript writes that information in the DOM node and the web browser updates its view, which is needed to realize a drag and drop feature or animations, like color and size changes.
 
 \paragraph{Adobe Air Specifics} 
-The Adobe Air HTML- and JavaScript engine is based on WebKit, an open source web browser engine. So it's necessary to know that some CSS features like text- or box-shadows need the prefix "-webkit-". The usage will be shown in the example below.
+The Adobe Air HTML- and JavaScript engine is based on WebKit, an open source web browser engine. So it's necessary to know that some CSS features like text- or box-shadows need the prefix "-webkit-". The usage will be shown in the example above -- Listing \ref{css_example_snippet}.
 
 \subsubsection{The basics of the GUI design}
 \paragraph{UI Object}
@@ -261,6 +315,12 @@ Each UI element, like a tab or the file tree, inherits from a base class called 
 
 \paragraph{Window}
 On the top of the GUI, the window object manages the resizing and the full-screen mode of the Adobe Air window. It contains a collection of frames, which are placed and resized with the help of the current window properties.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{images/window_structure.png}
+\caption{logical structure of a window}
+\end{figure}
 
 \paragraph{Frame}
 A frame is the main actor in handling tabs and its content. In addition, it resizes the tab content, like the Java editor or the file tree, and allows opening new tabs. In addition, it handles replacing and deleting tabs. To drag a tab into another frame, the tab, its content and context menu are removed from the old frame and placed into the new one. In this case, only the DOM nodes are destroyed, in which the Meta data like the source code of a specific editor tab keep stored because the Meta data is necessary for recreating the tab.
@@ -288,8 +348,8 @@ The GUI framework provides a number of UI components, which will be necessary fo
 	\item[MouseInfo]
 \end{description}
 
-\subsection{Single Page Web App}
-Usually a web application is using a number of HTML pages for rendering its content. A single page web app has only one HTML document, which is updated by some JavaScript functions. So it's possible to place, replace or remove DOM nodes during runtime. Another characteristic of a web application is its fragmentation into backend -- usually server-side -- and frontend -- client-side. This concept is also used by single page web apps. AlphaUML however, is designed as a single page web app without a backend, which could be used for parsing or getting access to files from storage. All these functionalities are transferred to the frontend, so each process is executed on the client side. To realize that concept, the compiler and any other feature is completely written in JavaScript. In addition, Adobe Air is used to get access to functionalities, which JavaScript doesn't have. For example JavaScript can't get access to the file system of a client, because of security reasons. In this case Adobe Air helps.
+\subsection{Single Page Web Application}
+Usually a web application is using a number of HTML pages for rendering its content. A single page web application (app) has only one HTML document, which is updated by some JavaScript functions. So it's possible to place, replace or remove DOM nodes during runtime. Another characteristic of a web application is its fragmentation into backend -- usually server-side -- and frontend -- client-side. This concept is also used by single page web apps. AlphaUML however, is designed as a single page web app without a backend, which could be used for parsing or getting access to files from storage. All these functionalities are transferred to the frontend, so each process is executed on the client side. To realize that concept, the compiler and any other feature is completely written in JavaScript. In addition, Adobe Air is used to get access to functionalities, which JavaScript doesn't have. For example JavaScript can't get access to the file system of a client, because of security reasons. In this case Adobe Air helps.
 
 \subsection{Single Source Publishing}
 \label{single_source}
@@ -302,7 +362,7 @@ To avoid project files AlphaUML follows the single source publishing concept. It
 
 \subsubsection{Class Diagram Specifics}
 \paragraph{@umlPos x:42 y:42}
-The position-tag defines the position - in pixel - of a class in the class diagram.
+The position-tag defines the position -- in pixel -- of a class in the class diagram.
 
 \paragraph{@umlNotePos x:42 y:42}
 If a class has a comment included, the position of the note will be stored in the note-position-tag. In addition if more than one note is connected to a class, the position of the first note will be used.
@@ -318,7 +378,7 @@ A special case is the JavaDoc comment itself. It is used to generate notes, whic
 The project-tag is used to define the project main file. It includes the relative root path and the main Java file with an absolute path.
 
 \paragraph{@umlIgnore path}
-To exclude specific files or folder, the ignore-tag allows ignoring those for the class diagram generation. That could be necessary if only a part of files should include in the class diagram, or if some Java files don’t follow the java syntax completely, because of its use to store only Java snippets.
+To exclude specific files or folder, the ignore-tag allows ignoring those for the class diagram generation. That could be necessary if only a part of files should include in the class diagram, or if some Java files don't follow the java syntax completely, because of its use to store only Java snippets.
 
 \newpage
 \section{Round-trip engineering}
@@ -350,7 +410,7 @@ Return one character of the bracket contained set.
 It describes a fully expression that can use in other rules or expressions
 
 \paragraph*{\textbf{(expression)}}$\;$ \\
-It allows the declaration of a subexpression to encapsulate it. It’s similar to a rule and is necessary to set an expression optional.
+It allows the declaration of a subexpression to encapsulate it. It's similar to a rule and is necessary to set an expression optional.
 
 \paragraph*{\textbf{expression *}}$\;$ \\
 Zero or more match results allowed. Returns the result as an array.
