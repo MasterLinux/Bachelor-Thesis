@@ -1,17 +1,21 @@
 \documentclass[fontsize=12pt,a4paper,titlepage]{scrartcl}
 
 \usepackage{listings}
-\usepackage{courier}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy} 
 
 \title{Design of an UML tool with round-trip engineering for Java and implementation as a web application in Adobe Air}
+\subtitle{Bachelor Thesis \\ University of Applied Sciences D\"{u}sseldorf \\ Department of Media}
 \date{10.08.2011}
-\author{Christoph Grundmann}
+\author{Degree Program: Media and applied \\ Information Technology(B.Sc.) \\ Christoph Grundmann (515440)}
+\publishers{First examiner: Prof. Dr.-Ing. MSc Markus Dahm \\ Second examiner: Prof. Dr. Christoph Thiel}
 
 \begin{document}
-\maketitle 
+\maketitle
 \newpage
 
 \tableofcontents
@@ -33,13 +37,13 @@ Some of the provided tools need to be configured. The Java compiler \ref{javac} 
 \subsection{Projects}
 \subsubsection{Folder Structure}
 \label{folder_structure}
-AlphaUML uses a specific but not required folder structure. It is designed to be compatible to NetBeans and Eclipse, which are two common used integrated development environments (IDE). Moreover, it is also possible to use a self-defined folder structure by defining a specific source folder, which includes the Java files. In NetBeans and Eclipse usually the "src" folder is used to contain each Java file, which is used as main folder if it is found in the used project folder. Another important folder is the "build" folder -- it is used when the source code is compiled. So each compiled Java class is found there. Furthermore, for the documentation output the "docs" folder is used.
+AlphaUML uses a specific but not required folder structure. It is designed to be compatible to NetBeans and Eclipse, which are two common used integrated development environments (IDE). Moreover, it is also possible to use a self-defined folder structure by defining a specific source folder which includes the Java files. In NetBeans and Eclipse usually the "src" folder is used to contain each Java file which is used as main folder if it is found in the used project folder. Another important folder is the "build" folder -- it is used when the source code is compiled. So each compiled Java class is found there. Furthermore, for the documentation output the "docs" folder is used.
 
 \subsubsection{New Project}
-When a new project has to be created, the current opened project is closed and an empty project without any Java file is created. This project has the typical folder structure, which is described above \ref{folder_structure}. To create a new project the start menu entry "New Project" is used.
+When a new project has to be created, the currently opened project is closed and an empty project without any Java file is created. This new project has the typical folder structure, which is described in \ref{folder_structure}. To create a new project the start menu entry "New Project" is used.
 
 \subsubsection{Load Existing Project}
-To open an existing project the "Open Project" entry of the start menu is used. It opens a specific folder, which could be any folder. If the folder contains a "src" folder AlphaUML uses it as main folder for Java source files, otherwise the user has to declare a folder himself.
+To open an existing project the "Open Project" entry of the start menu is used. It opens a specific folder which can be one without the usual folder structure of AlphaUML. If the folder contains a "src" folder, AlphaUML uses it as main folder for Java source files, otherwise the user has to declare a folder himself.
 
 \subsection{Console}
 The console is a useful tool to get information about the forward and reverse engineering process. It displays the current step of the executed process and catches errors. When a parsing error occurs the parser throws a message with all necessary information, like the Java file which causes the error and in which line and position it occurs. Furthermore it's able to execute the Java compiler \ref{javac} or the JavaDoc generator \ref{javadoc} by using their specific commands.
@@ -751,5 +755,22 @@ public interface Executable extends File {
 	public void execute() {}
 }
 \end{lstlisting}
+\newpage
+
+\section{Literature Index}
+\paragraph{Basics of Compiler Design - Anniversary edition}
+Torben \AE gidius Mogensen \\ http://www.diku.dk/hjemmesider/ansatte/torbenm/Basics/
+
+\paragraph{Compiler. Prinzipien, Techniken und Tools}
+Pearson Studium \\ ISBN-13: 978-3827370976
+
+\paragraph{The Java$^{TM}$ Language Specification - Third Edition}
+Addison Wesley \\ http://java.sun.com/docs/books/jls/
+
+\paragraph{UML 2 - Das umfassende Handbuch - 3. Auflage} 
+Galileo Computing \\ ISBN: 978-3-8362-1419-3
+
+\paragraph{Pro JavaScript$^{TM}$ Techniques}
+John Resig \\ ISBN: 1-59059-727-3
 
 \end{document}

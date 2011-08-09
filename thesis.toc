@@ -67,3 +67,9 @@
 \contentsline {subsubsection}{\numberline {3.2.3}Provided interfaces}{33}{subsubsection.3.2.3}
 \contentsline {subsubsection}{\numberline {3.2.4}Required interfaces}{34}{subsubsection.3.2.4}
 \contentsline {subsubsection}{\numberline {3.2.5}Extended interfaces}{35}{subsubsection.3.2.5}
+\contentsline {section}{\numberline {4}Literature Index}{37}{section.4}
+\contentsline {paragraph}{Basics of Compiler Design - Anniversary edition}{37}{section*.38}
+\contentsline {paragraph}{Compiler. Prinzipien, Techniken und Tools}{37}{section*.39}
+\contentsline {paragraph}{The Java$^{TM}$ Language Specification - Third Edition}{37}{section*.40}
+\contentsline {paragraph}{UML 2 - Das umfassende Handbuch - 3. Auflage}{37}{section*.41}
+\contentsline {paragraph}{Pro JavaScript$^{TM}$ Techniques}{37}{section*.42}
